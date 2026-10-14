@@ -2,6 +2,6 @@
 it('anahtar yokken panel açılır ve rapor uydurmaz', () => {
   cy.visit('/fixtures/injection-tos.html');
   cy.get('[data-trg-host]', { timeout: 10000 }).should('exist');
-  cy.wait(2000);
+  cy.wait(5000);
   cy.screenshot('no-key-panel', { capture: 'viewport' });
 });

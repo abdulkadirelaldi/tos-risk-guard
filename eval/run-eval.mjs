@@ -80,7 +80,8 @@ for (const src of sources) {
   docs.push({ src, snap, gold, reports, result: reports[0].status === 'tamam' ? score(reports[0], gold) : null });
 }
 
-const injection = await runInjectionSuite({ llm, fresh, model, hasKey: Boolean(apiKey), rawDir: RAW });
+const injection = await runInjectionSuite({ llm, fresh, model, hasKey: Boolean(apiKey), rawDir: RAW })
+  .catch((e) => ({ summary: null, markdown: `## Prompt injection testi\n\n_Bu model için çalıştırılamadı: ${e.message.slice(0, 160)}_` }));
 
 // ---------- Rapor ----------
 const L = [];

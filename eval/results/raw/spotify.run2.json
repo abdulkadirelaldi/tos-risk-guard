@@ -1,0 +1,158 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Bu belge, Spotify müzik ve içerik akışı hizmetinin kullanımına ilişkin şartları, abonelik ücretlerini, içerik lisanslama haklarını, veri kullanımını ve uyuşmazlıkların çözümüne dair yasal kuralları düzenlemektedir.",
+ "score": 61,
+ "level": "yuksek",
+ "breakdown": [
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 1
+  },
+  {
+   "category": "otomatik_yenileme",
+   "label": "Otomatik yenileme / ücretlendirme",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 10,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 2
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 3,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p79",
+   "quote": "Bu doğrultuda Spotify'a herhangi bir Kullanıcı İçeriğinizi Spotify Hizmeti ile bağlantılı olarak herhangi bir ortam aracılığıyla, tek başına ya da başka İçerik ile veya materyallerle birlikte, herhangi bir şekilde ve bilinen ya da bundan sonra geliştirilecek olan herhangi bir araçla, yöntemle veya teknolojiyle çoğaltmak, herkese açık hale getirmek, icra etmek ve göstermek, tercüme etmek, değiştirmek, türev eserlerini oluşturmak ve dağıtmak üzere münhasır olmayan, devredilebilir, alt lisansı verilebilir, telifsiz, tamamen ödenmiş, iptal edilemez ve tüm dünyada geçerli bir lisans verirsiniz.",
+   "explanation_tr": "Yüklediğiniz içerikler için şirkete dünya çapında, telifsiz ve kalıcı bir kullanım ve dağıtım hakkı vermiş olursunuz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Hizmette yayınladığınızda Kullanıcı İçeriği'nin mülkiyetini elinizde bulundurursunuz. Ancak Kullanıcı İçeriğinizi Spotify Hizmeti'nde kullanılabilir hale getirebilmemiz ve size belirli özellikler ve işlevler sunabilmemiz için sizden bu Kullanıcı İçeriği'ne ilişkin sınırlı bir lisans almamız gerekir. Bu doğrultuda Spotify'a herhangi bir Kullanıcı İçeriğinizi Spotify Hizmeti ile bağlantılı olarak herhangi bir ortam aracılığıyla, tek başına ya da başka İçerik ile veya materyallerle birlikte, herhangi bir şekilde ve bilinen ya da bundan sonra geliştirilecek olan herhangi bir araçla, yöntemle veya teknolojiyle çoğaltmak, herkese açık hale getirmek, icra etmek ve göstermek, tercüme etmek, değiştirmek, türev eserlerini oluşturmak ve dağıtmak üzere münhasır olmayan, devredilebilir, alt lisansı verilebilir, telifsiz, tamamen ödenmiş, iptal edilemez ve tüm dünyada geçerli bir lisans verirsiniz. Mümkün olan ve geçerli kanunlar kapsamında izin verilen ölçüde, Geri Bildirim dahil herhangi bir Kullanıcı İçeriği'nin yazarı olarak tanımlanma hakkınız ve bu tür Kullanıcı İçeriği'nin uygunsuz şekilde ele alınmasına itiraz etme hakkınız dahil olmak üzere her türlü \"manevi haktan\" veya eş değer haklardan feragat etmeyi ve bu tür haklardan yararlanmamayı da kabul edersiniz."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p104",
+   "quote": "Spotify Hizmeti'ne, üçüncü taraf uygulamalarına veya üçüncü taraf uygulama içeriğine ilişkin tüm iddialar için (a) Spotify'a ilk iddiadan önceki on iki ay içinde ödemiş olduğunuz tutar veya (b) 30,00 $ arasında hangisi daha yüksekse ilgili tutardaki toplam yükümlülük.",
+   "explanation_tr": "Şirketin size karşı olası sorumluluğu son bir yılda ödediğiniz tutar veya 30 dolar ile sınırlıdır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Spotify, yetkilileri, hissedarları, çalışanları, temsilcileri, yöneticileri, bağlı ortaklıkları, iştirakleri, halefleri, görevlileri, tedarikçileri veya lisans sağlayıcıları hiçbir durumda şunlardan sorumlu olmayacaktır: (1) her türlü dolaylı, özel, arızi, cezai, örnek niteliğindeki veya bağlı zarardan; (2) Spotify Hizmeti'nin, cihazların, üçüncü taraf uygulamalarının veya üçüncü taraf uygulama içeriğinin kullanılmasından veya kullanılamamasından kaynaklanan her durumda kullanım kaybı, veri kaybı, iş veya kâr kaybından (doğrudan veya dolaylı); veya (3) Spotify Hizmeti'ne, üçüncü taraf uygulamalarına veya üçüncü taraf uygulama içeriğine ilişkin tüm iddialar için (a) Spotify'a ilk iddiadan önceki on iki ay içinde ödemiş olduğunuz tutar veya (b) 30,00 $ arasında hangisi daha yüksekse ilgili tutardaki toplam yükümlülük. Maruz kaldığınız zararlara yönelik yükümlülüğümüz, makul olarak öngörülebilir zararlarla sınırlıdır."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p117",
+   "quote": "GEÇERLİ KANUNLARIN İZİN VERDİĞİ DURUMLARDA SİZ VE SPOTIFY, BİRBİRİNİZE KARŞI HERHANGİ BİR TOPLU YA DA TEMSİLİ GİBİ GÖRÜNEN DAVADA BİR DAVACI YA DA TOPLU DAVA TARAFI OLARAK DEĞİL, YALNIZCA KENDİ SIFATINIZLA İDDİADA BULUNABİLECEĞİNİZİ KABUL EDERSİNİZ.",
+   "explanation_tr": "Hak ararken toplu dava açma hakkınızdan feragat etmiş olursunuz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "GEÇERLİ KANUNLARIN İZİN VERDİĞİ DURUMLARDA SİZ VE SPOTIFY, BİRBİRİNİZE KARŞI HERHANGİ BİR TOPLU YA DA TEMSİLİ GİBİ GÖRÜNEN DAVADA BİR DAVACI YA DA TOPLU DAVA TARAFI OLARAK DEĞİL, YALNIZCA KENDİ SIFATINIZLA İDDİADA BULUNABİLECEĞİNİZİ KABUL EDERSİNİZ. Siz ve Spotify mutabık kalmadığınız sürece hiçbir hakem ya da hakim birden fazla kişinin iddialarını birleştiremez veya başka bir şekilde herhangi bir türde bir temsili dava ya da toplu dava yürütemez."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p51",
+   "quote": "Aksi belirtilmedikçe (örneğin, Ön Ödemeli Süre için kaydolduysanız) Ücretli Abonelikler iptal edilene kadar süresiz olarak devam eder. Her faturalandırma döneminin ilk gününde tekrar faturalandırılırsınız; ilgili ödemeyi yapar ve o sırada geçerli olan abonelik ücretini ödeme yönteminizden tahsil etmemiz için bize (veya bir üçüncü taraf aracılığıyla kaydolursanız geçerli üçüncü tarafa) yetki verirsiniz.",
+   "explanation_tr": "Aboneliğiniz siz iptal edene kadar her dönem otomatik olarak yenilenir ve ücreti ödeme yönteminizden çekilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Aksi belirtilmedikçe (örneğin, Ön Ödemeli Süre için kaydolduysanız) Ücretli Abonelikler iptal edilene kadar süresiz olarak devam eder. Her faturalandırma döneminin ilk gününde tekrar faturalandırılırsınız; ilgili ödemeyi yapar ve o sırada geçerli olan abonelik ücretini ödeme yönteminizden tahsil etmemiz için bize (veya bir üçüncü taraf aracılığıyla kaydolursanız geçerli üçüncü tarafa) yetki verirsiniz."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p52",
+   "quote": "Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız.",
+   "explanation_tr": "Aboneliğinizi dönem içinde iptal etseniz bile kullanılmayan günler için para iadesi yapılmaz.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Ücretli Aboneliğinizi, Spotify hesabınızda oturum açıp Hesap sayfasındaki yönergeleri izleyerek veya bu bağlantıya tıklayıp talimatları uygulayarak istediğiniz zaman iptal edebilirsiniz. Aksi belirtilmedikçe iptal işlemi iptal ettiğiniz fatura döneminin sonunda geçerli olur ve Spotify Hizmeti'nin ücretsiz sürümüne düşürülürsünüz. Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p101",
+   "quote": "Ancak bu duruma tabi olmak üzere Spotify Hizmeti \"olduğu gibi\" ve \"kullanılabilir olduğu şekliyle\", hiçbir türde açık, zımni veya yasal garanti olmaksızın sunulmaktadır.",
+   "explanation_tr": "Hizmet hiçbir garanti verilmeksizin 'olduğu gibi' sunulur ve yaşanacak aksaklıklarda şirketin sorumluluğu yoktur.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Spotify, Spotify Hizmetleri'ni makul özen ve beceriyle ve Spotify tarafından sağlanan Spotify Hizmeti'nin tüm özelliklerine uygun olarak sağlamaya devam edecektir. Ancak bu duruma tabi olmak üzere Spotify Hizmeti \"olduğu gibi\" ve \"kullanılabilir olduğu şekliyle\", hiçbir türde açık, zımni veya yasal garanti olmaksızın sunulmaktadır. Ayrıca, Spotify ve tüm içerik sahipleri yeterli kalite, pazarlanabilirlik, belirli bir amaca uygunluk veya ihlal içermemeyle ilgili her türlü açık, zımni ve yasal garantiyi reddetmektedir. Spotify ya da hiçbir içerik sahibi, Spotify Hizmeti'nin kötü amaçlı yazılımlardan ya da başka zararlı bileşenlerden ari olduğuna dair hiçbir garanti vermemektedir. Ayrıca Spotify, hiçbir üçüncü taraf uygulaması (veya bunların içeriği), kullanıcı içeriği, cihaz ya da Spotify Hizmeti üzerinden ya da aracılığıyla veya köprü verilen herhangi bir web sitesinde bir üçüncü tarafça reklamı yapılan, tanıtılan veya sunulan herhangi bir ürün ya da hizmete dair hiçbir beyanda bulunmaz, bunları garanti etmez veya bunlara ilgili sorumluluk kabul etmez ve Spotify, bunlara ilişkin üçüncü taraf sağlayıcıları ile sizin aranızdaki hiçbir işlem için sorumlu değildir. Sizin tarafınızdan Spotify'dan alınan sözlü ya da yazılı hiçbir tavsiye ya da bilgi, Spotify adına herhangi bir şekilde bir garanti teşkil etmeyecektir. Spotify Hizmeti'ni kullanırken sakıncalı içerik filtreleme özelliklerine erişebilirsiniz ancak bu özelliklerin kullanılması bazı sakıncalı içeriklerin sunulmasıyla sonuçlanabilir ve tüm sakıncalı içerikleri filtrelemek için bu özelliklere güvenmemeniz gerekir. Bu madde geçerli kanunların izin verdiği azami ölçüde uygulanacaktır."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p155",
+   "quote": "İsveç Kanunları",
+   "explanation_tr": "Uyuşmazlık durumunda yabancı ülke kanunları veya mahkemeleri geçerli olabilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "İsveç Kanunları"
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p33",
+   "quote": "Spotify herhangi bir gerekçeyle kullanıcı adınızı geri alabilir veya değiştirmenizi gerekli kılabilir.",
+   "explanation_tr": "Şirket herhangi bir sebep göstermeden kullanıcı adınızı geri alabilir veya değiştirebilir.",
+   "severity": "dusuk",
+   "idCorrected": false,
+   "paragraphText": "Spotify herhangi bir gerekçeyle kullanıcı adınızı geri alabilir veya değiştirmenizi gerekli kılabilir."
+  }
+ ],
+ "rejected": [
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p47",
+   "quote": "Spotify; düzenli abonelik ücretleri, Ön Ödeme Dönemi (henüz ödemesi yapılmamış dönemler için) ya da Kodlar (yukarıda tanımlanmıştır) dahil Ücretli Abonelikler'in ücretini zaman zaman değiştirebilir ve her türlü fiyat değişikliğini makul bir süre önce size bildiracaktır.",
+   "reason": "alinti_bulunamadi",
+   "reasonText": "Alıntı orijinal metinde bulunamadı"
+  }
+ ],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "orta",
+  "label": "Dikkatli yorumlayın",
+  "reasons": [
+   "Modelin 9 iddiasından 1 tanesi orijinal metinde doğrulanamadığı için atıldı."
+  ],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Kullanım Hüküm ve Koşulları - Spotify",
+  "url": "https://www.spotify.com/tr-tr/legal/end-user-agreement/",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 4539,
+  "sentParagraphs": 168,
+  "totalParagraphs": 168
+ }
+}

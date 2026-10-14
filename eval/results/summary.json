@@ -1,6 +1,6 @@
 {
   "model": "gemini-3.5-flash-lite",
-  "runs": 1,
+  "runs": 3,
   "total": {
     "tp": 38,
     "fp": 2,

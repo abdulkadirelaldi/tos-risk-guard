@@ -10,8 +10,37 @@ import { PageController } from '@page-agent/page-controller';
 import { extractBlocks, looksLikeLegalPage, pickRoot } from '../core/extract.js';
 import { normalize } from '../core/normalize.js';
 import { browserHiddenReason } from '../core/visibility.js';
+import { mountPanel, scrollToClauses } from './panel.js';
+import { analyze } from '../core/pipeline.js';
+import { createGeminiClient, DEFAULT_MODEL } from '../llm/gemini.js';
 
 const HOST_ATTR = 'data-trg-host';
+
+/**
+ * Analiz arka ucu. Gerçek uzantıda: service worker (anahtar yalnızca orada).
+ * Yalnızca Cypress e2e derlemesinde: aynı `analyze()` hattı içerik betiğinde çalışır, çünkü
+ * Cypress 16'nın CDP bağlantısı MV3 service worker'ını donduruyor (README > Demo).
+ * Normal derlemede __E2E__ false'tur; bu dal ve anahtar pakete hiç girmez.
+ */
+const backend = __E2E__
+  ? (() => {
+      let state = { state: 'bos' };
+      return {
+        async analyze(capture) {
+          state = { state: 'calisiyor' };
+          const model = __E2E_MODEL__ || DEFAULT_MODEL;
+          const report = await analyze({ ...capture, meta: { ...capture.meta, model } }, createGeminiClient({ apiKey: __E2E_KEY__, model }))
+            .catch((e) => ({ status: 'hata', error: String(e.message || e) }));
+          state = { state: report.status === 'tamam' ? 'tamam' : 'hata', report, error: report.error };
+          e2eMark({ state: state.state, score: report.score, confidence: report.uncertainty?.level, firstClause: report.clauses?.[0]?.paragraph_id });
+        },
+        getState: async () => state,
+      };
+    })()
+  : {
+      analyze: (capture) => chrome.runtime.sendMessage({ type: 'analyze', capture }),
+      getState: () => backend.getState(),
+    };
 let paragraphEls = new Map();
 let panelHost = null;
 let running = false;
@@ -75,15 +104,16 @@ function showPanel() {
   }
   panelHost = document.createElement('div');
   panelHost.setAttribute(HOST_ATTR, '');
-  // Panel, eklenti kökenli bir iframe'dir: sayfa betikleri içeriğini okuyamaz veya değiştiremez.
+  // Kapalı shadow root: sayfa betikleri panelin içeriğini okuyamaz/değiştiremez, sayfanın CSS'i sızmaz.
   const shadow = panelHost.attachShadow({ mode: 'closed' });
-  const frame = document.createElement('iframe');
-  frame.src = chrome.runtime.getURL('panel.html');
-  frame.title = 'ToS Risk Guard raporu';
-  frame.style.cssText = 'width:100%;height:100%;border:0;border-radius:12px;background:#fff;';
-  shadow.appendChild(frame);
   panelHost.style.cssText = 'all:initial;position:fixed;top:12px;right:12px;width:420px;max-width:calc(100vw - 24px);height:calc(100vh - 24px);z-index:2147483647;box-shadow:0 8px 32px rgba(0,0,0,.25);border-radius:12px;display:block;';
   document.documentElement.appendChild(panelHost);
+  mountPanel(shadow, {
+    getState: () => backend.getState(),
+    highlight,
+    close: () => (panelHost.style.display = 'none'),
+    rerun: () => run(),
+  });
 }
 
 async function run() {
@@ -93,7 +123,7 @@ async function run() {
     const cap = await capture();
     showPanel();
     e2eMark({ state: 'gonderildi' });
-    await chrome.runtime.sendMessage({ type: 'analyze', capture: cap });
+    await backend.analyze(cap);
   } finally {
     running = false;
   }
@@ -130,14 +160,16 @@ chrome.runtime.onMessage.addListener((msg) => {
   const ownsPanel = Boolean(panelHost?.isConnected);
   if (msg.type === 'state' && ownsPanel) e2eMark(msg);
   if (msg.type === 'run' && window.top === window) run();
-  else if (msg.type === 'highlight' && ownsPanel) highlight(msg.paragraphId);
-  else if (msg.type === 'closePanel' && ownsPanel) panelHost.style.display = 'none';
-  else if (msg.type === 'rerun' && ownsPanel) run();
 });
 
 // E2E: Cypress eklenti kökenli panel iframe'ine tıklayamaz; "Sayfada göster" düğmesinin
 // yaptığı işi aynı fonksiyonla tetikler. Normal derlemede bu dinleyici yoktur.
-if (__E2E__) document.addEventListener('trg-e2e-highlight', (e) => highlight(String(e.detail)));
+if (__E2E__) {
+  document.addEventListener('trg-e2e-highlight', (e) => {
+    scrollToClauses();
+    highlight(String(e.detail));
+  });
+}
 
 // Hukuki metin gibi görünen sayfalarda otomatik çalış (dinamik içerik için kısa bekleme).
 const headings = [...document.querySelectorAll('h1,h2')].slice(0, 5).map((h) => h.textContent).join(' ');

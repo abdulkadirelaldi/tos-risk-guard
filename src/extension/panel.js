@@ -1,9 +1,12 @@
-// Rapor paneli (eklenti kökenli iframe). Tüm içerik textContent ile basılır;
-// LLM ya da sayfa kaynaklı hiçbir metin HTML olarak yorumlanmaz.
+// Rapor paneli. İçerik betiği tarafından KAPALI bir shadow root içine çizilir: sayfa betikleri
+// panelin DOM'una referans alamaz. Tüm içerik textContent ile basılır; LLM ya da sayfa
+// kaynaklı hiçbir metin HTML olarak yorumlanmaz.
 
 import { CATEGORIES } from '../core/categories.js';
+import PANEL_CSS from './panel.css';
 
-const app = document.getElementById('app');
+let app = null;
+let actions = { highlight() {}, close() {}, rerun() {} };
 const SEV = { yuksek: 'Yüksek', orta: 'Orta', dusuk: 'Düşük' };
 const LEVEL = { yuksek: 'Yüksek risk', orta: 'Orta risk', dusuk: 'Düşük risk' };
 const HIDDEN_REASON = {
@@ -23,7 +26,6 @@ function h(tag, props = {}, ...children) {
   return el;
 }
 
-const send = (msg) => chrome.runtime.sendMessage(msg);
 
 function render(st) {
   app.replaceChildren();
@@ -53,6 +55,12 @@ function render(st) {
 }
 
 function scoreSection(r) {
+  if (r.documentType === 'hukuki_metin_degil') {
+    return h('section', { 'data-testid': 'score' },
+      h('h2', {}, 'Risk skoru'),
+      h('div', { class: 'score' }, h('div', { class: 'score-num' }, '—'),
+        h('div', {}, h('b', {}, 'Skor uygulanamaz'), h('div', { class: 'muted' }, 'Bu sayfa bir kullanım koşulu / gizlilik politikası gibi görünmüyor; risk skoru vermek yanıltıcı olur.'))));
+  }
   const color = { yuksek: 'var(--high)', orta: 'var(--mid)', dusuk: 'var(--low)' }[r.level];
   return h('section', { 'data-testid': 'score' },
     h('h2', {}, 'Risk skoru'),
@@ -86,7 +94,7 @@ function injectionSection(r) {
 }
 
 function clausesSection(r) {
-  const sec = h('section', { 'data-testid': 'clauses' }, h('h2', {}, `Riskli maddeler (${r.clauses.length})`));
+  const sec = h('section', { 'data-testid': 'clauses', id: 'clauses' }, h('h2', {}, `Riskli maddeler (${r.clauses.length})`));
   if (!r.clauses.length) sec.append(h('p', { class: 'muted' }, 'Doğrulanmış riskli madde yok. Bu, metnin risksiz olduğunu garanti etmez.'));
   for (const c of r.clauses) {
     sec.append(h('article', { class: 'clause', 'data-testid': 'clause' },
@@ -98,7 +106,7 @@ function clausesSection(r) {
         `“${c.quote}”`,
         h('div', { class: 'src' },
           h('span', {}, `Orijinal metin · ${c.paragraph_id}${c.idCorrected ? ' (konum düzeltildi)' : ''}`),
-          h('button', { type: 'button', onclick: () => send({ type: 'highlight', paragraphId: c.paragraph_id }) }, 'Sayfada göster →')))));
+          h('button', { type: 'button', onclick: () => actions.highlight(c.paragraph_id) }, 'Sayfada göster →')))));
   }
   return sec;
 }
@@ -118,12 +126,45 @@ function footer(r) {
     `Model: ${m.model} · ${m.sentParagraphs}/${m.totalParagraphs} paragraf · gizli blok: ${r.hiddenCount} · ${(m.ms / 1000).toFixed(1)} sn${r.fromCache ? ' · önbellekten' : ''}`);
 }
 
-document.getElementById('close').addEventListener('click', () => send({ type: 'closePanel' }));
-document.getElementById('rerun').addEventListener('click', () => { render({ state: 'calisiyor' }); send({ type: 'rerun' }); });
+/** Panelde riskli maddeler listesine kaydırır (vurgulama ile birlikte çağrılır). */
+export function scrollToClauses() {
+  app?.querySelector('#clauses')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+const DISCLAIMER = 'Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.';
+
+/**
+ * Paneli verilen shadow root'a kurar ve durum değiştikçe yeniden çizer.
+ * @param {ShadowRoot} root
+ * @param {{getState: () => Promise<object>, highlight: (id: string) => void, close: () => void, rerun: () => void}} handlers
+ */
+export function mountPanel(root, handlers) {
+  actions = handlers;
+  const style = document.createElement('style');
+  style.textContent = PANEL_CSS;
+  app = h('main', { 'aria-live': 'polite' });
+  const shell = h('div', { class: 'shell' },
+    h('header', { class: 'top' },
+      h('strong', {}, 'ToS Risk Guard'),
+      h('div', { class: 'top-actions' },
+        h('button', { type: 'button', title: 'Yeniden analiz et', onclick: () => { last = ''; render({ state: 'calisiyor' }); actions.rerun(); } }, '↻'),
+        h('button', { type: 'button', title: 'Kapat', onclick: () => actions.close() }, '✕'))),
+    h('div', { class: 'disclaimer', role: 'note' },
+      h('span', { 'aria-hidden': 'true' }, '⚖'),
+      h('span', {}, h('b', {}, 'Bu uygulama hukuki tavsiye vermez.'), ' ', DISCLAIMER)),
+    app);
+  root.append(style, shell);
+  poll();
+}
 
 let last = '';
 async function poll() {
-  const st = await send({ type: 'getState' });
+  let st;
+  try {
+    st = await actions.getState();
+  } catch (e) {
+    st = { state: 'hata', error: `Eklenti arka planına ulaşılamadı: ${e.message}` };
+  }
   const key = JSON.stringify(st);
   if (key !== last) {
     last = key;
@@ -131,4 +172,3 @@ async function poll() {
   }
   setTimeout(poll, st.state === 'tamam' || st.state === 'hata' ? 2000 : 700);
 }
-poll();

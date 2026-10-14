@@ -15,6 +15,7 @@ export default defineConfig({
       // Eklentiyi Cypress'in açtığı Chrome'a yükle.
       on('before:browser:launch', (browser, launchOptions) => {
         if (browser.family === 'chromium') launchOptions.extensions.push(resolve('dist'));
+        if (process.env.TRG_CHROME_LOG) launchOptions.args.push('--enable-logging=stderr', '--v=0');
         return launchOptions;
       });
       on('task', {

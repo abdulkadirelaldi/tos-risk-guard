@@ -1,0 +1,16 @@
+{
+  "model": "gemini-3.8-flash",
+  "runs": 1,
+  "total": {
+    "tp": 46,
+    "fp": 2,
+    "fn": 28,
+    "dup": 0,
+    "rej": 3,
+    "claims": 57,
+    "precision": 0.9583333333333334,
+    "recall": 0.6216216216216216,
+    "f1": 0.7540983606557377
+  },
+  "injection": null
+}

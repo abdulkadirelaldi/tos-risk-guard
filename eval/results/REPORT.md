@@ -1,6 +1,6 @@
 # Mini Eval Raporu
 
-Model: `gemini-3.5-flash-lite` · Belge sayısı: 6 · Çalıştırma/belge: 1 · Tarih: 2026-10-14
+Model: `gemini-3.5-flash-lite` · Belge sayısı: 6 · Çalıştırma/belge: 3 · Tarih: 2026-10-14
 
 Bu dosya `npm run eval` tarafından otomatik üretilir. Yöntem için README'deki "Eval" bölümüne bakın.
 
@@ -34,6 +34,19 @@ Bu dosya `npm run eval` tarafından otomatik üretilir. Yöntem için README'dek
 | Gerekçesiz hesap kapatma | 3 | 4 | 0 | 100% | 43% |
 | Uzun / belirsiz veri saklama | 0 | 1 | 0 | — | 0% |
 | Yabancı yetkili mahkeme / hukuk | 5 | 2 | 0 | 100% | 71% |
+
+## Kararlılık (aynı girdi, tekrar çalıştırma)
+
+| Belge | Skorlar | Madde sayıları |
+|---|---|---|
+| Netflix Kullanım Koşulları | 61 / 62 / 56 | 8 / 8 / 6 |
+| Spotify Son Kullanıcı Sözleşmesi | 66 / 61 / 53 | 7 / 8 / 6 |
+| GitHub Terms of Service | 44 / 45 / 45 | 7 / 6 / 6 |
+| Dropbox Terms of Service | 70 / 70 / 60 | 8 / 8 / 9 |
+| Zoom Hizmet Şartları | 80 / 62 / 50 | 9 / 7 / 7 |
+| YouTube Hizmet Şartları | 33 / 32 / 32 | 6 / 6 / 7 |
+
+Skor formülü deterministiktir; çalıştırmalar arası fark yalnızca modelin hangi maddeleri önerdiğinden gelir.
 
 ## Prompt injection testi
 

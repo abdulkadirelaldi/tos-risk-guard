@@ -1,0 +1,118 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "YouTube hizmet koşulları, kullanıcıların platformu kullanım şartlarını, telif ve içerik haklarını, hesap feshi koşullarını ve sorumluluk sınırlamalarını düzenler.",
+ "score": 32,
+ "level": "orta",
+ "breakdown": [
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 10,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 2
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p53",
+   "quote": "Hizmet'e İçerik sağlayarak YouTube'a Hizmet'i çalıştırmak, tanıtmak ve iyileştirmek amacıyla bu İçeriği kullanması için (çoğaltmak, dağıtmak, değiştirmek, görüntülemek ve sunmak dahil) tüm dünyada geçerli, münhasır olmayan, telifsiz, devredilebilir, alt lisanslanabilir bir lisans verirsiniz.",
+   "explanation_tr": "Yüklediğiniz içerikleri YouTube'un dünya çapında ücretsiz, alt lisanslanabilir şekilde kullanmasına izin vermiş olursunuz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Hizmet'e İçerik sağlayarak YouTube'a Hizmet'i çalıştırmak, tanıtmak ve iyileştirmek amacıyla bu İçeriği kullanması için (çoğaltmak, dağıtmak, değiştirmek, görüntülemek ve sunmak dahil) tüm dünyada geçerli, münhasır olmayan, telifsiz, devredilebilir, alt lisanslanabilir bir lisans verirsiniz."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p74",
+   "quote": "YouTube; (a) bu Sözleşme'yi esaslı şekilde veya üst üste ihlal etmeniz; (b) bir yasal şart ya da bir mahkeme emrine uymak için bunu yapmamızın gerekli olması veya (c) herhangi bir kullanıcı, başka bir üçüncü taraf, YouTube veya İş Ortağı için sorumluluk ya da zarara neden olabilecek davranış olduğuna makul bir şekilde karar vermemiz halinde Google hesabınızı veya Hizmet'in tamamına veya bir kısmına erişiminizi askıya alma veya feshetme hakkını saklı tutar.",
+   "explanation_tr": "YouTube, kuralların ihlal edildiği veya zarar riski olduğu gerekçesiyle hesabınızı askıya alabilir veya kapatabilir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "YouTube; (a) bu Sözleşme'yi esaslı şekilde veya üst üste ihlal etmeniz; (b) bir yasal şart ya da bir mahkeme emrine uymak için bunu yapmamızın gerekli olması veya (c) herhangi bir kullanıcı, başka bir üçüncü taraf, YouTube veya İş Ortağı için sorumluluk ya da zarara neden olabilecek davranış olduğuna makul bir şekilde karar vermemiz halinde Google hesabınızı veya Hizmet'in tamamına veya bir kısmına erişiminizi askıya alma veya feshetme hakkını saklı tutar."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p143",
+   "quote": "YouTube'un ve İş Ortaklarının Hizmet'ten veya Hizmet ile ilgili olarak oluşan taleplere karşı toplam sorumluluğu, hangisi daha fazla ise: (a) talep ile ilgili olarak YouTube'a yazılı olarak göndermiş olduğunuz bildirim tarihinden önceki 12 ay içinde Hizmet'i kullanımınız dolayısıyla YouTube'un size ödemiş olduğu gelir tutarı ve (b) 500 € ile sınırlıdır .",
+   "explanation_tr": "YouTube'un kullanıcıya karşı olası yasal sorumluluğu en fazla 500 Euro veya son 12 ayda size ödediği gelirle sınırlıdır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "YouTube'un ve İş Ortaklarının Hizmet'ten veya Hizmet ile ilgili olarak oluşan taleplere karşı toplam sorumluluğu, hangisi daha fazla ise: (a) talep ile ilgili olarak YouTube'a yazılı olarak göndermiş olduğunuz bildirim tarihinden önceki 12 ay içinde Hizmet'i kullanımınız dolayısıyla YouTube'un size ödemiş olduğu gelir tutarı ve (b) 500 € ile sınırlıdır ."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p46",
+   "quote": "YouTube sürekli olarak Hizmet'te değişiklikler yapmakta ve Hizmet'i iyileştirmektedir. Bu sürekli gelişim kapsamında, özellik ve işlev ekleme veya kaldırma, yeni dijital içerikler veya hizmetler sunma ya da eskilerini kullanımdan kaldırma gibi (Hizmet'in tamamında veya bir kısmında geçerli olacak) değişiklikler yapabiliriz.",
+   "explanation_tr": "YouTube, platformun özelliklerini önceden bildirmeksizin veya tek taraflı olarak değiştirebilir ya da kaldırabilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "YouTube sürekli olarak Hizmet'te değişiklikler yapmakta ve Hizmet'i iyileştirmektedir. Bu sürekli gelişim kapsamında, özellik ve işlev ekleme veya kaldırma, yeni dijital içerikler veya hizmetler sunma ya da eskilerini kullanımdan kaldırma gibi (Hizmet'in tamamında veya bir kısmında geçerli olacak) değişiklikler yapabiliriz. Performans veya güvenlik iyileştirmeleri yapmak, yasalara uymak amacıyla değişiklikler yapmak veya sistemlerimizde yasa dışı faaliyetlerin gerçekleştirilmesini ya da sistemlerimizin kötüye kullanılmasını önlemek için Hizmet'te değişiklik yapmamız veya Hizmet'i ya da herhangi bir kısmını kullanımdan kaldırmamız gerekebilir. Bu değişiklikler tüm kullanıcıları, bazı kullanıcıları, hatta tek bir kullanıcıyı etkileyebilir. Hizmet'in indirilebilir yazılımlar (YouTube Studio uygulaması gibi) gerektirmesi veya içermesi halinde cihaz ayarlarınıza bağlı olarak yeni bir sürüm veya özellik kullanılabilir olduğunda ilgili yazılım cihazınızda otomatik olarak güncellenebilir. Hizmet'i kullanımınızı olumsuz yönde etkileyen önemli değişiklikler yaparsak size makul bir süre öncesinden bildirimde bulunuruz. Hizmetlerin kötüye kullanımının engellenmesi, yasal şartların yerine getirilmesi veya güvenlik ve kullanılabilirlikle ilgili sorunların giderilmesi gibi acil durumlar hariçtir. Ayrıca geçerli yasa ve politikalara tabi olarak, içeriğinizi Google Takeout aracılığıyla Google Hesabınızdan dışa aktarma fırsatı sunarız."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p88",
+   "quote": "Bu Sözleşme'de açıkça belirtilen veya yasaların gerektirdiği durumlar haricinde, YouTube Hizmet'e dair belirli hiçbir vaatte bulunmamaktadır. Örneğin: Hizmet aracılığıyla sağlanan İçerik; Hizmet'in belirli özellikleri veya doğruluğu, güvenilirliği, kullanılabilirliği ya da ihtiyaçlarınızı karşılayabilme kapasitesi hakkında ya da gönderdiğiniz herhangi bir İçeriğin Hizmet'te erişilebilir olacağına ya da saklanacağına dair hiçbir vaatte bulunmayız.",
+   "explanation_tr": "YouTube, hizmetin kesintisiz veya hatasız çalışacağına ya da içeriklerinizin saklanacağına dair hiçbir garanti vermez.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Yasa gereği, tüketicilerin hariç bırakılamaz veya bir sözleşme ile tadil edilemez nitelikte belirli hakları bulunur. Bu Sözleşme'de yer alan hiçbir şart, bir tüketici olarak sahip olabileceğiniz bu hakları etkilemez. Bu Sözleşme'de açıkça belirtilen veya yasaların gerektirdiği durumlar haricinde, YouTube Hizmet'e dair belirli hiçbir vaatte bulunmamaktadır. Örneğin: Hizmet aracılığıyla sağlanan İçerik; Hizmet'in belirli özellikleri veya doğruluğu, güvenilirliği, kullanılabilirliği ya da ihtiyaçlarınızı karşılayabilme kapasitesi hakkında ya da gönderdiğiniz herhangi bir İçeriğin Hizmet'te erişilebilir olacağına ya da saklanacağına dair hiçbir vaatte bulunmayız."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p108",
+   "quote": "Bu Sözleşme ve YouTube ile bu Sözleşme kapsamındaki ilişkiniz İngiliz Kanunlarına tabi olacak ve yasal anlaşmazlıklar için İngiltere ve Galler mahkemelerine başvurulabilecektir.",
+   "explanation_tr": "Olası uyuşmazlıklarda İngiltere yasaları geçerli olacak ve İngiltere mahkemeleri yetkili kılınacaktır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Bu Sözleşme ve YouTube ile bu Sözleşme kapsamındaki ilişkiniz İngiliz Kanunlarına tabi olacak ve yasal anlaşmazlıklar için İngiltere ve Galler mahkemelerine başvurulabilecektir."
+  }
+ ],
+ "rejected": [],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "yuksek",
+  "label": "Yüksek güven",
+  "reasons": [],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "HİZMET KOŞULLARI",
+  "url": "https://www.youtube.com/static?template=terms&hl=tr",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 3224,
+  "sentParagraphs": 143,
+  "totalParagraphs": 143
+ }
+}

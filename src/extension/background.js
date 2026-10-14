@@ -5,7 +5,6 @@ import { analyze } from '../core/pipeline.js';
 import { hash } from '../core/normalize.js';
 import { createGeminiClient, DEFAULT_MODEL } from '../llm/gemini.js';
 
-const PANEL_URL = chrome.runtime.getURL('panel.html');
 const CACHE_TTL_MS = 30 * 60 * 1000;
 
 /** tabId -> { state: 'calisiyor'|'tamam'|'hata'|'anahtar_yok', report?, error? } */
@@ -14,14 +13,6 @@ const tabState = new Map();
 async function getConfig() {
   const { apiKey, model } = await chrome.storage.local.get(['apiKey', 'model']);
   if (apiKey) return { apiKey, model: model || DEFAULT_MODEL };
-  // Yalnızca `npm run build -- --e2e` ile üretilen yerel test derlemesinde bulunur (dist/ git'e girmez).
-  try {
-    const res = await fetch(chrome.runtime.getURL('e2e-config.json'));
-    if (res.ok) {
-      const cfg = await res.json();
-      return { apiKey: cfg.apiKey, model: cfg.model || DEFAULT_MODEL };
-    }
-  } catch {}
   return { apiKey: null, model: DEFAULT_MODEL };
 }
 
@@ -63,37 +54,19 @@ async function runAnalysisInner(tabId, capture) {
   }
 }
 
+// Yalnızca kendi içerik betiklerimizden gelen mesajlar kabul edilir (externally_connectable yok,
+// sayfalar bu kanala mesaj gönderemez). İçerik yine de güvenilmez veri olarak temizlenir.
 chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   if (sender.id !== chrome.runtime.id || !sender.tab) return false;
   const tabId = sender.tab.id;
-  const fromPanel = typeof sender.url === 'string' && sender.url.startsWith(PANEL_URL);
-
-  switch (msg?.type) {
-    case 'analyze': {
-      if (fromPanel) return false;
-      // Bilerek await edilmiyor: içerik betiği durumu panel üzerinden takip eder.
-      runAnalysis(tabId, sanitizeCapture(msg.capture));
-      sendResponse({ ok: true });
-      return false;
-    }
-    case 'getState': {
-      if (!fromPanel) return false;
-      sendResponse(tabState.get(tabId) ?? { state: 'bos' });
-      return false;
-    }
-    case 'highlight':
-    case 'closePanel':
-    case 'rerun': {
-      if (!fromPanel) return false;
-      if (msg.type === 'rerun') tabState.delete(tabId);
-      // Panel bir iframe'dir; mesaj tüm çerçevelere gider, yalnızca paneli açan içerik betiği işler.
-      chrome.tabs.sendMessage(tabId, { type: msg.type, paragraphId: String(msg.paragraphId ?? '') }).catch(() => {});
-      sendResponse({ ok: true });
-      return false;
-    }
-    default:
-      return false;
+  if (msg?.type === 'analyze') {
+    // Bilerek await edilmiyor: panel durumu getState ile takip eder.
+    runAnalysis(tabId, sanitizeCapture(msg.capture));
+    sendResponse({ ok: true });
+  } else if (msg?.type === 'getState') {
+    sendResponse(tabState.get(tabId) ?? { state: 'bos' });
   }
+  return false;
 });
 
 chrome.action.onClicked.addListener((tab) => {

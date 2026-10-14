@@ -1,0 +1,156 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Zoom hizmet şartları belgesi; hesap kullanımı, otomatik yenileme, ödemeler, fikri mülkiyet hakları, sorumluluk sınırlamaları ve tahkim/toplu davadan feragat gibi koşulları düzenlemektedir.",
+ "score": 50,
+ "level": "orta",
+ "breakdown": [
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 10,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 4,
+   "count": 1
+  },
+  {
+   "category": "veri_saklama",
+   "label": "Uzun / belirsiz veri saklama",
+   "points": 3,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p34",
+   "quote": "Zoom'a kalıcı, geri alınamaz, dünya çapında geçerli, münhasır olmayan, telifsiz, alt lisanslandırılabilir ve devredilebilir bir lisans ve İzin Verilen Kullanımlar için ihtiyaç duyulan veya gereken diğer tüm hakları vermektesiniz.",
+   "explanation_tr": "Yüklediğiniz içerikler için şirkete dünya çapında geçerli ve geniş kapsamlı kullanım hakları tanımaktasınız.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "10.2 İzin Verilen Kullanımlar ve Müşteriye Lisans Verilmesi. Zoom, Müşteri İçeriğine yalnızca aşağıdaki nedenlerle erişecek ve yalnızca aşağıdaki nedenlerle kullanacaktır (\"İzin Verilen Kullanımlar\"): (i) işbu Sözleşme ile tutarlı bir şekilde ve yükümlülüklerimizi ifa ederek Hizmetleri sağlamamız için gerektiği şekilde; ii) Gizlilik Bildirimimiz uyarınca; (iii) verdiğiniz izin veya talimat doğrultusunda; (iv) Hukukun gerektirdiği şekilde; (v) Kabul Edilebilir Kullanım Yönergelerimize uyulması ve bunların uygulanması dahil hukuk, güvenlik ve emniyet amaçlarıyla. Zoom'a kalıcı, geri alınamaz, dünya çapında geçerli, münhasır olmayan, telifsiz, alt lisanslandırılabilir ve devredilebilir bir lisans ve İzin Verilen Kullanımlar için ihtiyaç duyulan veya gereken diğer tüm hakları vermektesiniz."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p93",
+   "quote": "HİZMETLERİN VE YAZILIMIN \"OLDUĞU GİBİ\" SAĞLANDIĞINI KABUL EDERSİNİZ VE ZOOM, İŞTİRAKLERİ, TEDARİKÇİLERİ VE LİSANS VERENLERİ, SATILABİLİRLİK, BELİRLİ BİR AMACA UYGUNLUK VEYA İHLÂLDE BULUNMAMA GARANTİSİ DE DAHİL ANCAK AÇIK VEYA ZIMNİ HER TÜRLÜ GARANTİYİ AÇIKÇA REDDEDER.",
+   "explanation_tr": "Hizmetler 'olduğu gibi' sunulur ve şirket her türlü garanti ve sorumluluğu reddeder.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "HİZMETLERİN VE YAZILIMIN \"OLDUĞU GİBİ\" SAĞLANDIĞINI KABUL EDERSİNİZ VE ZOOM, İŞTİRAKLERİ, TEDARİKÇİLERİ VE LİSANS VERENLERİ, SATILABİLİRLİK, BELİRLİ BİR AMACA UYGUNLUK VEYA İHLÂLDE BULUNMAMA GARANTİSİ DE DAHİL ANCAK AÇIK VEYA ZIMNİ HER TÜRLÜ GARANTİYİ AÇIKÇA REDDEDER. ZOOM, İŞTİRAKLERİ, TEDARİKÇİLERİ VE LİSANS VERENLERİ, (i) HİZMETLERİN VEYA YAZILIMIN KULLANIMINDAN ELDE EDİLEBİLECEK SONUÇLAR HAKKINDA (ii) HİZMETLER VEYA YAZILIM ARACILIĞIYLA ELDE EDİLEN HERHANGİ BİR BİLGİNİN DOĞRULUĞU VEYA GÜVENİLİRLİĞİ HAKKINDA YA DA (iii) HİZMETLERİN YA DA YAZILIMIN VEYA HERHANGİ BİR KULLANICININ GEREKSİNİMLERİNİ KARŞILAYACAĞI YA DA KESİNTİSİZ, ZAMANINDA, GÜVENLİ VEYA HATASIZ OLACAĞI KONUSUNDA HİÇBİR TAAHHÜT, VAAT, GARANTİ VEYA BEYAN VERMEZ. İNDİRİLEN VEYA HİZMETLERİN YA DA YAZILIMIN KULLANIMI YOLUYLA BAŞKA BİR ŞEKİLDE ELDE EDİLEN HER TÜRLÜ MALZEME VEYA VERİ SİZİN TAKDİRİNİZE BAĞLIDIR VE RİSK SİZE AİTTİR. HİZMETLERİN VEYA YAZILIMIN KULLANIMI NEDENİYLE KARŞILAŞACAĞINIZ ZARARLARDAN YALNIZCA SİZ SORUMLU OLACAKSINIZ. HİZMETLERİN VEYA YAZILIMIN KULLANIMINDAN YA DA PERFORMANSINDAN KAYNAKLANAN TÜM RİSK SİZE AİTTİR. ZOOM; MÜŞTERİ İÇERİĞİ VE MÜŞTERİ VERİLERİ, KULLANICI BİLGİLERİ VEYA KULLANICILAR ARASINDAKİ İLETİŞİM DAHİL HİÇBİR VERİNİN SAKLANMASI İÇİN HERHANGİ BİR SORUMLULUK ÜSTLENMEZ. HİZMETLERİN VE YAZILIMIN KULLANIM RİSKİ TAMAMEN SİZİN SORUMLULUĞUNUZDADIR."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p102",
+   "quote": "Zoom ile aranızdaki bazı anlaşmazlıkları bağlayıcı tahkim yoluyla (\"Tahkim Anlaşması\") çözmeyi kabul etmektesiniz. Tahkim, hakim veya jüriden ziyade, bir hakemin anlaşmazlığa karar vereceğini ifade eder.Taraflar, herhangi bir tür toplu ya da kitlesel davaya veya grup davasına, özel avukat yoluyla genel davaya ya da başka bir temsili davaya başvurma veya dahil olma hakkından açıkça feragat etmektedir.",
+   "explanation_tr": "Uyuşmazlıklar mahkemeler yerine zorunlu tahkime götürülür ve toplu dava hakkından feragat edilir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Zoom ile aranızdaki bazı anlaşmazlıkları bağlayıcı tahkim yoluyla (\"Tahkim Anlaşması\") çözmeyi kabul etmektesiniz. Tahkim, hakim veya jüriden ziyade, bir hakemin anlaşmazlığa karar vereceğini ifade eder.Taraflar, herhangi bir tür toplu ya da kitlesel davaya veya grup davasına, özel avukat yoluyla genel davaya ya da başka bir temsili davaya başvurma veya dahil olma hakkından açıkça feragat etmektedir. Bu Tahkim Anlaşması, önceki tüm sürümlerinin yerine geçmektedir."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p139",
+   "quote": "ABD'nin Kaliforniya Eyaleti yasaları, yasaların çatışması ilkelerine bakılmaksızın, Federal Tahkim Yasası'nın tahkimle ilgili hükümleri yönetmesi dışında, bu Sözleşmeden kaynaklanan veya bu Sözleşmeyle ilgili yorumlanması, inşası, ifası ve uygulanması dahil tüm konuları yönetir.",
+   "explanation_tr": "Uyuşmazlıkların çözümünde Kaliforniya eyalet yasaları ve mahkemeleri yetkilidir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "33.3 Geçerli Hukuk ve Yargı Salahiyeti ve Yeri. ABD'nin Kaliforniya Eyaleti yasaları, yasaların çatışması ilkelerine bakılmaksızın, Federal Tahkim Yasası'nın tahkimle ilgili hükümleri yönetmesi dışında, bu Sözleşmeden kaynaklanan veya bu Sözleşmeyle ilgili yorumlanması, inşası, ifası ve uygulanması dahil tüm konuları yönetir. Madde 27'de belirtilenler dışında, taraflar Santa Clara County, Kaliforniya'da bulunan ve hizmet veren eyalet mahkemelerinin münhasır yargı yetkisini ve yerini ve Kaliforniya'nın Kuzey Bölgesi'ndeki federal mahkemeleri kabul eder. Yukarıdakilere rağmen, siz ve Zoom bu paragrafın sizin veya bizim tarafımızdan Amerika Birleşik Devletleri Patent Duruşma ve Temyiz Kurulu (PTAB), Amerika Birleşik Devletleri Ticari Marka Duruşma ve Temyiz Kurulları (TTAB), Amerika Birleşik Devletleri Patent ve Ticari Marka Ofisi (PTO) Amerika Birleşik Devletleri Telif Hakkı Ofisi ve herhangi bir yabancı patent, ticari marka veya telif hakkı nezdinde sizin veya Zoom'un sahibi olduğu veya size ya da Zoom'a temlik edilen herhangi bir telif hakkı, patent, ticari sır, ticari marka veya diğer fikri mülkiyet haklarının geçerliliği veya uygulanabilirliği ile ilgili herhangi bir kovuşturma başlatmasını yasal açıdan engellemediğini kabul etmektesiniz. Bu Sözleşme kapsamında tüketici olarak hareket ediyorsanız ve Avrupa Birliği'ne veya Avrupa Ekonomik Bölgesine üye bir Devlette ya da Birleşik Krallık'ta ikamet ediyorsanız, yukarıda belirtilen geçerli hukuk seçimi sizi mutat olarak ikamet ettiğiniz yerde sizin için geçerli olan Kanunlar gereğince sözleşme ile askıya alınamayan hükümlerin sağladığı korumadan mahrum bırakmaz."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p68",
+   "quote": "Zoom, işbu Madde 15.1 uyarınca zaman zaman bu Sözleşmede değişiklikler, silmeler ve eklemeler (\"Değişiklikler\") yapabilir. İşbu Hizmet Şartlarında yapılan değişiklikler burada veya buradaki Hizmet Açıklamamızda yayımlanacak olup, bunların en yeni sürümünü düzenli olarak kontrol etmeli ve en güncel sürümü elinizde bulundurmalısınız.",
+   "explanation_tr": "Zoom, sözleşme şartlarını tek taraflı olarak değiştirebilir ve güncellemeleri takip etmek kullanıcının sorumluluğundadır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "15.1 Genel Değişiklikler. Zoom, işbu Madde 15.1 uyarınca zaman zaman bu Sözleşmede değişiklikler, silmeler ve eklemeler (\"Değişiklikler\") yapabilir. İşbu Hizmet Şartlarında yapılan değişiklikler burada veya buradaki Hizmet Açıklamamızda yayımlanacak olup, bunların en yeni sürümünü düzenli olarak kontrol etmeli ve en güncel sürümü elinizde bulundurmalısınız. Değişikliklerin yapılması halinde Zoom, burada yer alan Hizmet Şartlarının veya burada bulunan Hizmet Açıklamasının en üstünde Değişikliklerin yürürlüğe giriş tarihini belirtecektir. İşbu Sözleşmede yapılan değişiklikler, tahkimden (gerekli olması halinde) vazgeçmek için yeni bir fırsat sağlamaz. Hizmetleri, Değişikliklerin yürürlüğe giriş tarihinden sonra kullanmaya devam ederseniz, revize edilmiş hüküm ve koşulları kabul etmiş olursunuz. Bazı durumlarda Zoom, bir Değişikliği size bildirebilir ve bir Değişiklik için açık onayınızı talep edebilir. Bir değişikliğin, geçerli Kanunlar uyarınca belirli bir bildirimde bulunulmasını gerektirmesi halinde Zoom, geçerli Kanunlarda belirtildiği şekilde bu bildirimi, haklarınıza ilişkin her türlü gerekli bildirimle birlikte size sağlayacaktır."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p64",
+   "quote": "Ayrıca Zoom, bu Sözleşmeyi otuz (30) iş günü önceden bildirimle herhangi bir nedenle veya nedensiz olarak feshedebilir.",
+   "explanation_tr": "Zoom, herhangi bir gerekçe göstermeksizin hesabınızı önceden bildirerek kapatabilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "14.3 Zoom Fesih Hakları ve Askıya Alma. Burada aksi yöndeki her türlü hususa rağmen işbu Sözleşmenin herhangi bir hükmüne veya belirtilen politika, yönetmelik, bildirim veya beyanlardan herhangi birine uymadığınız takdirde Zoom (i) Hizmetlere erişiminizi derhal askıya alabilir veya (ii) işbu Sözleşmeyi derhal yürürlüğe girmek üzere feshedebilir. Zoom'un Hizmetlerinizi askıya almasına rağmen uymama durumunun devam etmesi halinde Zoom, bu Madde 14.3'teki fesih haklarının herhangi bir kısmını veya tamamını uygulayabilir. Ayrıca Zoom, bu Sözleşmeyi otuz (30) iş günü önceden bildirimle herhangi bir nedenle veya nedensiz olarak feshedebilir."
+  },
+  {
+   "category": "veri_saklama",
+   "paragraph_id": "p66",
+   "quote": "İşbu Sözleşmenin sona ermesini veya feshini takip eden otuz (30) takvim günü içinde Zoom, Müşteri İçeriğinizi kurtarabilmeniz için erişim sağlayacaktır; bu süre sonrasında Müşteri İçeriğiniz geçerli Kanun, işbu Sözleşme ve düzenli olarak planladığımız silme protokollerimiz, politikalarımız ve prosedürlerimiz uyarınca silinecektir.",
+   "explanation_tr": "Hesabınız kapandıktan sonra verileriniz bir süre daha saklanmaya devam edebilir.",
+   "severity": "dusuk",
+   "idCorrected": false,
+   "paragraphText": "14.5 Fesih Sonrasında Müşteri İçeriğinin Silinmesi ve Bu İçeriğe Erişim. İşbu Sözleşmenin sona ermesini veya feshini takip eden otuz (30) takvim günü içinde Zoom, Müşteri İçeriğinizi kurtarabilmeniz için erişim sağlayacaktır; bu süre sonrasında Müşteri İçeriğiniz geçerli Kanun, işbu Sözleşme ve düzenli olarak planladığımız silme protokollerimiz, politikalarımız ve prosedürlerimiz uyarınca silinecektir. İşbu Madde 14.5'te belirtilen süre boyunca tüm erişim, size işbu Sözleşme uyarınca sağlanmaktadır ve idame ettirilmektedir."
+  }
+ ],
+ "rejected": [
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p62",
+   "quote": "taraflardan biri ilgili Sipariş Formunda yer alan Hizmetlerle ilgili olarak (i) yeni Yenileme Dönemi başlamadan en az otuz (30) takvim günü önce veya (ii) geçerli Kanunlar uyarınca zorunlu tutulan bildirim süresi içinde yazılı fesih veya değişiklik bildiriminde bulunmadığı takdirde Hizmetlere ilişkin her bir Yenileme Dönemi, o sıradaki geçerli İlk Abonelik Dönemi veya geçerli Yenileme Dönemi sonunda otomatik olarak başlayacaktır.",
+   "reason": "alinti_bulunamadi",
+   "reasonText": "Alıntı orijinal metinde bulunamadı"
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p44",
+   "quote": "Zoom tarafından aksi kabul edilmedikçe Kanunlar tarafından aksi zorunlu tutulmadıkça ve Sipariş Formunuzda aksi belirtilmedikçe Ödemlerin tamamının İlk Abonelik Süresi boyunca ve varsa sonraki güncel Yenileme Süresi boyunca iptal edilemez olduğunu, nihai olduğunu ve geri ödenemez olduğunu kabul etmektesiniz.",
+   "reason": "alinti_bulunamadi",
+   "reasonText": "Alıntı orijinal metinde bulunamadı"
+  }
+ ],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "orta",
+  "label": "Dikkatli yorumlayın",
+  "reasons": [
+   "Modelin 9 iddiasından 2 tanesi orijinal metinde doğrulanamadığı için atıldı."
+  ],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Zoom Hizmet Şartları  | Zoom",
+  "url": "https://www.zoom.com/en/trust/terms/",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 5100,
+  "sentParagraphs": 175,
+  "totalParagraphs": 175
+ }
+}

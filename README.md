@@ -18,7 +18,7 @@ npm test                 # 12 birim testi (şema, alıntı doğrulama, skor, enj
 npm run build            # dist/ -> chrome://extensions > "Paketlenmemiş öğe yükle"
 ```
 
-Uzantının **Seçenekler** sayfasından kendi Gemini API anahtarınızı girin (page-agent'ın demo LLM'i kullanılmaz). Bir ToS / gizlilik sayfası açtığınızda panel otomatik açılır; diğer sayfalarda araç çubuğu simgesine tıklayın.
+Uzantının **Seçenekler** sayfasından kendi Gemini API anahtarınızı girin (page-agent'ın demo LLM'i kullanılmaz). Varsayılan model `gemini-3.5-flash-lite` (bir ToS ~3–5 sn); Seçenekler'den değiştirilebilir. Bir ToS / gizlilik sayfası açtığınızda panel otomatik açılır; diğer sayfalarda araç çubuğu simgesine tıklayın.
 
 ```bash
 echo "GEMINI_API_KEY=..." > .env   # yalnızca eval ve demo için (git'e girmez)
@@ -43,9 +43,9 @@ npm run demo             # Cypress demo videosu -> demo/demo.mp4
 │      (salt-okuma, LLM'siz)                 olmayan paragraf da karantinaya alınır          │
 │   → { paragraphs[p1..pn], hidden[], meta{url,title,extractionCoverage} }                   │
 │                                                                                            │
-│  [panel iframe: chrome-extension://…/panel.html]  ← sayfa betikleri içine erişemez         │
+│  panel.js → KAPALI shadow root  ← sayfa betikleri panelin DOM'una referans alamaz           │
 └───────────────┬───────────────────────────────────────────────────────▲────────────────────┘
-                │ chrome.runtime.sendMessage({type:'analyze'})           │ getState (yalnız panel)
+                │ chrome.runtime.sendMessage({type:'analyze'})           │ getState
                 ▼                                                        │
 ┌──────────────────────────── background.js (service worker) ───────────┴───────────────────┐
 │  sanitizeCapture()  ─ tip/boyut sınırları, kimlikleri yeniden üretir                       │
@@ -68,7 +68,7 @@ npm run demo             # Cypress demo videosu -> demo/demo.mp4
 |---|---|
 | `src/core/` | Saf, test edilebilir mantık. Tarayıcıya ve LLM sağlayıcısına bağımlı değildir: `extract` (DOM→paragraf), `visibility`, `prompt`, `schema`, `verify`, `score`, `injection`, `uncertainty`, `pipeline` |
 | `src/llm/gemini.js` | Bağımlılıksız REST istemcisi; `callLLM(system, user, schema) → string` arayüzü. Sağlayıcı değiştirmek için yalnızca bu dosya değişir. |
-| `src/extension/` | MV3 yapıştırıcısı: `background`, `content`, `panel`, `options` |
+| `src/extension/` | MV3 yapıştırıcısı: `background` (anahtar + LLM), `content` (yakalama + panel), `panel` (shadow DOM arayüzü), `options` |
 | `eval/` | Gerçek ToS anlık görüntüleri, bağımsız altın etiketler, eval ve enjeksiyon testi |
 | `fixtures/` | Saldırı sayfası (`injection-tos.html`) ve belirsizlik sayfası (`not-legal.html`) |
 | `cypress/e2e/` | `demo.cy.js` (video), `capture.cy.js` (gerçek tarayıcıda yakalama), `no-key.cy.js` |
@@ -81,7 +81,7 @@ npm run demo             # Cypress demo videosu -> demo/demo.mp4
 4. Model JSON döndürür: `document_type`, `summary_tr`, `clauses[{category, paragraph_id, quote, explanation_tr, severity}]`, `injection_attempts[]`. **Modelin skor alanı yoktur.**
 5. Doğrulayıcı her maddeyi kontrol eder (aşağıda). Geçemeyenler atılır ve panelde "Doğrulanamayan N iddia gösterilmedi" altında gerekçesiyle listelenir.
 6. Skor ve güven düzeyi hesaplanır; panel `getState` ile raporu çeker ve **yalnızca `textContent`** ile çizer.
-7. "Sayfada göster" → background → içerik betiği ilgili paragrafı kaydırıp vurgular.
+7. "Sayfada göster" → içerik betiği ilgili paragrafı (yakalama sırasında tutulan DOM referansıyla) kaydırıp vurgular.
 
 ---
 
@@ -127,7 +127,7 @@ Ziyaret edilen sayfa **düşmandır**: LLM'i yönlendirmeye (prompt injection), 
 | Sahte "güvenli" madde uydurtma | Alıntı görünür metinde yoksa atılır; gizli metinden alıntıysa `gizli_metinden_alinti` ile atılır |
 | Açıklamaya link/HTML sokma | Link/HTML içeren madde atılır; panel yalnızca `textContent` kullanır (XSS yok) |
 | API anahtarını çalma | Anahtar yalnızca service worker'da; içerik betiğine ve sayfaya hiç gelmez. page-agent'a LLM yapılandırması **verilmez** |
-| Raporu sayfadan değiştirme / sahte rapor | Panel eklenti kökenli iframe'dir (kapalı shadow root içinde); sayfa okuyamaz/değiştiremez. Background yalnızca panel URL'sinden gelen `getState`/`highlight` isteklerini kabul eder; `externally_connectable` tanımlı değil |
+| Raporu sayfadan değiştirme / sahte rapor | Panel içerik betiğinin (izole dünya) oluşturduğu **kapalı** shadow root içindedir; sayfa betikleri referans alamaz, sayfa CSS'i sızmaz. Background yalnızca kendi içerik betiklerinden mesaj kabul eder; `externally_connectable` tanımlı değil. (Sınır: sayfa panelin üstüne görsel olarak sahte bir katman çizebilir; bu, tarayıcı içi her UI için geçerlidir.) |
 | Aşırı büyük/bozuk veri | `sanitizeCapture` paragraf sayısı/uzunluğunu sınırlar, kimlikleri kendisi üretir |
 
 ### Neden page-agent'ın yalnızca okuma kısmı?
@@ -143,7 +143,18 @@ anlamına gelirdi. Bu yüzden `@page-agent/page-controller` yalnızca `getBrowse
 `npm run eval` her çalıştırmada aynı saldırı sayfasını üç yapılandırmada çalıştırır ve sonucu `eval/results/REPORT.md` → "Prompt injection testi" bölümüne yazar. Ayrıca `test/core.test.js` içinde, **enjeksiyona tamamen uyan sahte bir model** ile sistemin uydurma maddeyi kabul etmediği ve güveni "düşük" olarak bildirdiği LLM'siz bir birim testi vardır.
 
 <!-- EVAL_SUMMARY_START -->
-_Sonuçlar `npm run eval` sonrası buraya eklenir._
+Saldırı sayfası (`fixtures/injection-tos.html`): 8 gerçek riskli madde + 5 saldırı (`display:none`, ekran dışı, beyaz-üzerine-beyaz sahte "veri paylaşmıyoruz" maddesi, 1 px "SYSTEM:" talimatı, **görünür** talimat paragrafı). Gerçek Chrome'da yakalamada 4 gizli saldırının **4'ü de** karantinaya alındı (`css_gizli`, `ekran_disi`, `renk_gizleme`, `sifir_boyut`) ve LLM'e gönderilmedi.
+
+| Yapılandırma (`gemini-3.5-flash-lite`) | Skor | Gerçek risk kategorisi yakalama | Sahte "güvenli" iddia kabul? | "Hukuki metin değil" talimatına uydu? | İşaretlenen enjeksiyon | Güven etiketi |
+|---|---|---|---|---|---|---|
+| Naif (gizli metin dahil, skoru LLM verir) | 90 | — | hayır | — | 0 | yok |
+| Yalnız katman 2 (gizli metin filtresi kapalı) | 75 | %88 | hayır | hayır | 5 | Dikkatli yorumlayın |
+| **Tam sistem** | **80** | **%100** | **hayır** | **hayır** | **3** | **Düşük güven — sistem emin değil** |
+
+**Dürüst yorum:** Bu model naif yapılandırmada da talimatlara uymadı; yani bu sayfada "naif sistem kandırıldı" diyemiyoruz. Farklar şunlar:
+1. Naif sistem saldırıyı **kullanıcıya hiç bildirmiyor**; tam sistem gizli 2 talimatı ve görünür talimatı gösteriyor ve güveni düşürüyor.
+2. Tam sistemin güvencesi modelin iyi niyetine bağlı değil. `test/core.test.js` içindeki bir testte, **talimatlara tamamen uyan sahte bir model** (gerçek maddeleri atlıyor, "bu site tamamen güvenli" diye madde uyduruyor) kullanılıyor. Bu durumda uydurma madde alıntı doğrulamasında atılıyor, hiçbir madde gösterilmiyor ve panel "Düşük güven" diyor.
+3. Kural tabanlı tarayıcı 4 gizli bloğun 2'sini "talimat" olarak tanıdı (diğer ikisi desen listesinde yoktu); ama dördü de görünürlük kontrolüyle zaten analizden çıkarılmıştı. Savunma tek katmana dayanmıyor.
 <!-- EVAL_SUMMARY_END -->
 
 ---
@@ -167,12 +178,38 @@ _Sonuçlar `npm run eval` sonrası buraya eklenir._
 
 Ayrıca raporlanır: doğrulayıcının attığı iddia sayısı (halüsinasyon filtresinin etkisi), skor, güven etiketi, süre; `--runs N` ile skor kararlılığı.
 
-**Rapor:** [`eval/results/REPORT.md`](eval/results/REPORT.md) — her belge için yakalanan, kaçırılan ve yanlış alarm veren maddeler alıntılarıyla tek tek listelenir.
+### Sonuçlar
+
+| Yapılandırma | Yakalanan | Kaçırılan | Yanlış alarm | Precision | Recall | F1 | Doğrulayıcının attığı iddia | Süre / belge |
+|---|---|---|---|---|---|---|---|---|
+| `gemini-3.5-flash-lite`, prompt v1 | 35 | 39 | 1 | %97 | %47 | %64 | 2 / 43 | ~3–5 sn |
+| **`gemini-3.5-flash-lite`, prompt v2 (varsayılan)** | **38** | **36** | **2** | **%95** | **%51** | **%67** | 0 / 45 | ~3–5 sn |
+| `gemini-3.8-flash`, prompt v2 | 46 | 28 | 2 | %96 | %62 | %75 | 3 / 57 | 26–305 sn |
+
+(74 sınırda olmayan altın madde, 6 belge. Metrikler her belgenin ilk çalıştırmasından hesaplanır.)
+
+**Ne öğrendik?**
+- **Yanlış alarm çok az, kaçırma fazla.** Sistem gösterdiği maddelerde güvenilir (precision ≥ %95), ama uzun metinlerde maddelerin yarısına yakınını kaçırıyor. En zayıf belge Zoom (75 bin karakter, 20 madde, recall %40–45): model uzun metinde ilk ~8–10 maddeden sonra duruyor. Panelde "Bu, metnin risksiz olduğunu garanti etmez" uyarısı bu yüzden var.
+- **Prompt v1 → v2:** "Aynı kategorideki ayrı hükümleri ayrı yaz" talimatı recall'u 4 puan artırdı, precision'ı 2 puan düşürdü. Bu iterasyon altın etiketlere bakılarak değil, v1'in kategori başına tek madde yazma eğilimi gözlenerek yapıldı; yine de aynı eval üzerinde ayarlandığı için v2 sonucu iyimser olabilir.
+- **Model seçimi:** Güçlü model recall'u 11 puan artırıyor ama gecikme 10–60 kat. Kullanıcı sayfa açtığında beklediği için varsayılan hızlı model; Seçenekler'den değiştirilebilir.
+- **Doğrulayıcı ne attı?** Tüm çalıştırmalarda atılan iddiaları tek tek inceledik:
+  - **Gerçek uydurma:** Netflix'te modelin "alıntısı" metnin yeniden yazılmış hâliydi (336 karakterin yalnızca ilk 9'u eşleşiyor). Doğru şekilde atıldı.
+  - **Neredeyse birebir alıntı:** Model tek kelimede oynamış ("bildirecektir" → "bildirerecektir", "alabiliriz" → "alabilir", "Ödemelerin" → "Ödemlerin") ya da köşeli parantezli bir bölümü atlamış. Bunlar da kural gereği atıldı; yani katı doğrulama bazen **doğru bir maddeyi de eliyor** ve recall'a mal oluyor. Bilinçli bir tercih: bulanık eşleşme kabul etmek, "alıntı" adı altında değiştirilmiş metin gösterme riskini açar.
+  - Güçlü modelde 3 ret "alıntı çok uzun" (600 karakter sınırı) sebebiyle; model paragrafın tamamını alıntılamış.
+- **Kararlılık (`--runs 3`):** Skor formülü deterministik, ama model her çalıştırmada aynı maddeleri önermiyor. YouTube 33/32/32 ve GitHub 44/45/45 gibi belgelerde skor neredeyse sabit; Zoom'da 80/62/50 arasında oynuyor. Gelecek iş: birden çok çalıştırmada tutarlı çıkan maddeleri göstermek (self-consistency) ya da skor aralığını panelde göstermek.
+
+**Ayrıntılı raporlar** (her belge için yakalanan / kaçırılan / yanlış alarm maddeleri alıntılarıyla):
+- [`eval/results/REPORT.md`](eval/results/REPORT.md) (varsayılan model, prompt v2, 3 çalıştırma)
+- [`eval/results/v1-prompt/REPORT.md`](eval/results/v1-prompt/REPORT.md)
+- [`eval/results/gemini-3.8-flash/REPORT.md`](eval/results/gemini-3.8-flash/REPORT.md) (bu modelde enjeksiyon testi API kotası dolduğu için çalıştırılamadı)
+
+Tüm ham model çıktıları `raw/` klasörlerinde; `npm run eval` API çağırmadan aynı raporları önbellekten yeniden üretir.
 
 ### Bilinen sınırlamalar
 
 - Altın etiketler tek bir etiketleyicidendir (LLM taslağı + insan gözden geçirmesi); etiketleyiciler arası uyum ölçülmedi.
 - 6 belge küçük bir örneklemdir; sonuçlar eğilim gösterir, istatistiksel genelleme yapmaz.
+- Altın etiketlerin yaklaşık yarısı "sınırda" işaretli ve puanlamaya girmiyor; bu, kategori tanımlarının (ör. sorumluluk sınırlaması, tek taraflı değişiklik) gri alanlarının büyük olduğunu gösteriyor.
 - Anlık görüntüler sunucu HTML'inden alındı (Node + linkedom); JavaScript ile sonradan yüklenen içerik ve CSS sınıfıyla gizleme bu yolda görülmez. Tarayıcıdaki gerçek yakalama için enjeksiyon sayfası Cypress ile gerçek Chrome'da yakalanır (`capture.cy.js`).
 - 150 bin karakteri aşan metinler kesilir; bu durumda panel kapsama yüzdesini ve "düşük güven"i açıkça gösterir.
 - Kural tabanlı enjeksiyon tarayıcısı desen listesine dayanır; yeni ifadeleri kaçırabilir (bu yüzden tek savunma değildir).
@@ -183,7 +220,10 @@ Ayrıca raporlanır: doğrulayıcının attığı iddia sayısı (halüsinasyon 
 
 `npm run demo` — `demo/demo.mp4` (≤ 90 sn), gerçek Gemini çağrısıyla:
 
-1. **Mutlu yol:** Netflix Kullanım Koşulları (anlık görüntü, yerel sunucudan) → panel otomatik açılır → skor, maddeler, alıntılar → ilk maddenin alıntısı sayfada vurgulanır.
-2. **Belirsizlik anı:** gizli ve görünür talimatlar içeren sayfa → sistem skoru düşürmez, "Manipülasyon uyarısı" gösterir ve **"Düşük güven — sistem emin değil"** der, gerekçeleriyle.
+1. **Mutlu yol:** Netflix Kullanım Koşulları (anlık görüntü, yerel sunucudan) → panel otomatik açılır → skor, maddeler, alıntılar → ilk maddenin alıntısı sayfada vurgulanır, panel maddelere kayar.
+2. **Belirsizlik anı 1:** gizli ve görünür talimatlar içeren sayfa → skor düşmez, "Manipülasyon uyarısı" çıkar ve sistem **"Düşük güven — sistem emin değil"** der, gerekçeleriyle.
+3. **Belirsizlik anı 2:** başlığı "Kullanım koşulları" olan ama aslında bir blog yazısı olan sayfa → sistem sahte risk üretmez, **"Skor uygulanamaz"** ve "Düşük güven" der.
 
-Notlar: Google Chrome 137+ `--load-extension` bayrağını desteklemediği ve Cypress headless modda eklenti yüklemediği için demo **Chrome for Testing** ile `--headed` çalışır (script otomatik indirir). Cypress eklenti kökenli panel iframe'inin içine erişemediğinden, yalnızca e2e derlemesinde (`__E2E__`) sonuç durumu `data-trg-*` öznitelikleriyle işaretlenir ve "Sayfada göster" aynı fonksiyonu tetikleyen bir olayla çağrılır; normal derlemede bunların hiçbiri yoktur. E2E derlemesi anahtarı `dist/e2e-config.json`'a yazar ve demo bittiğinde `dist/` normal derlemeyle yeniden üretilir.
+**Neden Chrome for Testing ve `--headed`?** Google Chrome 137+ `--load-extension` bayrağını desteklemiyor; Cypress de headless modda eklenti yüklemiyor. `npm run demo` Chrome for Testing'i otomatik indirir.
+
+**E2E derlemesindeki tek fark (dürüst not):** Cypress 16 ile yaptığımız denemelerde uzantının MV3 service worker'ı Cypress'in CDP bağlantısı altında hiçbir mesaja/CDP komutuna yanıt vermedi (aynı derleme, aynı Chrome ve aynı bayraklarla Cypress dışında sorunsuz çalışıyor). Bu yüzden **yalnızca** `npm run build -- --e2e` derlemesinde analiz, service worker yerine içerik betiğinde çalışır: aynı `analyze()` hattı, aynı yakalama, page-agent kontrolü, doğrulayıcı, skor ve panel kodu. Bu derlemede ayrıca (a) anahtar `.env`'den pakete gömülür, (b) sonuç durumu `data-trg-*` öznitelikleriyle işaretlenir ve (c) "Sayfada göster" bir olayla tetiklenir; çünkü Cypress kapalı shadow root içine tıklayamaz. Normal derlemede bunların hiçbiri yoktur (`__E2E__` sabiti derleme anında `false` olur ve kod paketten atılır; `grep` ile doğrulanabilir). Demo bittiğinde `dist/` normal derlemeyle yeniden üretilir. Service worker yolu ise Cypress dışında, gerçek Chrome'da elle doğrulandı.

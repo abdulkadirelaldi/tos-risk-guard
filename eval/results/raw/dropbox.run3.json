@@ -1,0 +1,157 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Bu belge, Dropbox hizmetlerinin kullanımına ilişkin şartları, kullanıcı sorumluluklarını, telif ve gizlilik hükümlerini, ücretlendirme ve abonelik kurallarını, sorumluluk sınırlamalarını ve uyuşmazlıkların çözümüne dair tahkim koşullarını düzenlemektedir.",
+ "score": 60,
+ "level": "yuksek",
+ "breakdown": [
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 2
+  },
+  {
+   "category": "otomatik_yenileme",
+   "label": "Otomatik yenileme / ücretlendirme",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 2
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 4,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p59",
+   "quote": "THE SERVICES ARE PROVIDED \"AS IS.\" WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+   "explanation_tr": "Hizmetler 'olduğu gibi' sunulmakta olup, her türlü garanti ve ticari elverişlilik reddedilmektedir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "We strive to provide great Services, but there are certain things that we can't guarantee. TO THE FULLEST EXTENT PERMITTED BY LAW, DROPBOX AND ITS AFFILIATES, SUPPLIERS AND DISTRIBUTORS MAKE NO WARRANTIES, EITHER EXPRESS OR IMPLIED, ABOUT THE SERVICES. THE SERVICES ARE PROVIDED \"AS IS.\" WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. Some places don’t allow the disclaimers in this paragraph, so they may not apply to you. For example, these disclaimers do not override the legal protections, including statutory warranties, granted to consumers by EU law."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p65",
+   "quote": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+   "explanation_tr": "Şirketin size karşı olan toplam mali sorumluluğu en fazla 20 ABD Doları veya mevcut planınız için ödediğiniz tutar ile sınırlıdır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX. THIS PROVISION DOES NOT APPLY TO EU CONSUMERS WHERE PROHIBITED BY APPLICABLE LAW."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p70",
+   "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator",
+   "explanation_tr": "Uyuşmazlıklar mahkemeler yerine bağlayıcı ve zorunlu tahkim yoluyla çözülecektir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "We Both Agree to Arbitrate. You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below. This includes disputes arising out of or relating to the interpretation or application of this “Mandatory Arbitration Provisions” section, including its scope, enforceability, revocability, or validity. The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p75",
+   "quote": "You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+   "explanation_tr": "Kullanıcılar haklarını toplu dava yoluyla arayamazlar, yalnızca bireysel olarak dava açabilirler.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p44",
+   "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+   "explanation_tr": "Ücretli hesaba geçtiğinizde aboneliğiniz siz iptal edene kadar her dönem otomatik olarak yenilenir ve kartınızdan çekim yapılır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Billing. You can increase your storage space and add paid features to your account (turning your account into a “Paid Account”). We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation. If you’re on an annual plan, we’ll send you a notice email reminding you that your plan is about to renew within a reasonable period of time prior to the renewal date. You’re responsible for all applicable taxes, and we’ll charge tax when required to do so. Some countries have mandatory local laws regarding your cancellation rights, and this paragraph doesn’t override these laws."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p45",
+   "quote": "You may cancel your Paid Account at any time. Refunds are only issued if required by law.",
+   "explanation_tr": "Hesabınızı istediğiniz zaman iptal edebilirsiniz ancak kanunen zorunlu olmadıkça para iadesi yapılmaz.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Cancellation. You may cancel your Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p47",
+   "quote": "We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions.",
+   "explanation_tr": "Şirket, abonelik yenileme dönemlerinde fiyatları tek taraflı olarak değiştirebilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Changes. We may change the fees in effect on renewal of your subscription, to reflect factors such as changes to our product offerings, changes to our business, or changes in economic conditions. We’ll give you no less than 30 days’ advance notice of these changes via a message to the email address associated with your account and you’ll have the opportunity to cancel your subscription before the new fee comes into effect."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p78",
+   "quote": "These Terms will be governed by California law except for its conflicts of laws principles.",
+   "explanation_tr": "Sözleşme metni ve olası uyuşmazlıklar Kaliforniya yasalarına tabidir.",
+   "severity": "orta",
+   "idCorrected": true,
+   "paragraphText": "These Terms will be governed by California law except for its conflicts of laws principles. However, some countries (including those in the European Union) have laws that require agreements to be governed by the local laws of the consumer's country. This paragraph doesn’t override those laws."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p52",
+   "quote": "We reserve the right to suspend or terminate your access to the Services with notice to you if Dropbox reasonably believes...",
+   "explanation_tr": "Şirket, belirli durumlarda ön bildirimde bulunarak hesabınızı askıya alabilir veya sonlandırabilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "You’re free to stop using our Services at any time. We reserve the right to suspend or terminate your access to the Services with notice to you if Dropbox reasonably believes:"
+  }
+ ],
+ "rejected": [],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "yuksek",
+  "label": "Yüksek güven",
+  "reasons": [],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Terms of Service - Dropbox",
+  "url": "https://www.dropbox.com/terms",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 3243,
+  "sentParagraphs": 97,
+  "totalParagraphs": 97
+ }
+}

@@ -1,4 +1,4 @@
-:root {
+:host {
   --bg: #ffffff;
   --fg: #1f2328;
   --muted: #656d76;
@@ -14,8 +14,8 @@
   --accent: #0b57d0;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
-body { display: flex; flex-direction: column; height: 100vh; }
+.shell { all: initial; display: flex; flex-direction: column; height: 100%; background: var(--bg); color: var(--fg); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; border-radius: 12px; overflow: hidden; }
+.shell * { font-family: inherit; }
 button { font: inherit; cursor: pointer; }
 
 .top { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid var(--line); }
