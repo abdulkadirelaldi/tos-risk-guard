@@ -1,0 +1,38 @@
+{
+ "risk_score": 90,
+ "summary": "StreamBox abonelik sözleşmesi; otomatik yenilenen ödemeler, ücret artış hakları, iade yapılmaması, iptal sürecinde ücretlendirmenin devam etmesi, verilerin üçüncü taraflarla paylaşılabilmesi, koşulların tek taraflı değiştirilebilmesi ve Delaware mahkemelerinin yetkili kılınması gibi kullanıcı açısından yüksek riskli maddeler içermektedir.",
+ "risky_clauses": [
+  {
+   "quote": "Aylık üyeliğiniz, siz iptal edene kadar her ay otomatik olarak yenilenir ve kayıtlı ödeme yönteminizden ücret tahsil edilir.",
+   "explanation": "Kullanıcının onayı olmadan otomatik yenileme ile her ay düzenli tahsilat yapılmasını sağlar."
+  },
+  {
+   "quote": "StreamBox, üyelik ücretlerini dilediği zaman değiştirme hakkını saklı tutar; yeni ücret bir sonraki fatura döneminden itibaren uygulanır.",
+   "explanation": "Şirkete tek taraflı olarak fiyat artışı yapma yetkisi verir."
+  },
+  {
+   "quote": "Ödemeler iade edilmez. Kısmen kullanılmış abonelik dönemleri için iade veya kredi verilmez.",
+   "explanation": "Hizmet kullanılmasa dahi ücret iadesi yapılmayacağını belirtir."
+  },
+  {
+   "quote": "İptal talebi yalnızca müşteri hizmetlerine yazılı olarak iletilebilir ve işleme alınması 30 güne kadar sürebilir; bu süre içinde ücretlendirme devam eder.",
+   "explanation": "İptal sürecini zorlaştırır ve kullanıcıdan kullanılmayan dönemin ücretini de talep etmeye devam eder."
+  },
+  {
+   "quote": "İzleme geçmişiniz, cihaz bilgileriniz ve konum verileriniz reklam ortaklarımız ve iş ortaklarımızla paylaşılabilir.",
+   "explanation": "Kullanıcı gizliliğini ihlal edebilecek şekilde hassas verilerin üçüncü taraflarla paylaşılmasına izin verir."
+  },
+  {
+   "quote": "Hesabınızı kapatsanız bile verileriniz yasal ve ticari amaçlarla süresiz olarak saklanabilir.",
+   "explanation": "Hesap silindikten sonra bile verilerin süresiz olarak saklanmasına imkan tanır."
+  },
+  {
+   "quote": "StreamBox bu koşulları önceden bildirimde bulunmaksızın değiştirebilir; değişiklikten sonra hizmeti kullanmaya devam etmeniz yeni koşulları kabul ettiğiniz anlamına gelir.",
+   "explanation": "Kullanıcıya haber verilmeksizin sözleşme şartlarının değiştirilmesine olanak tanır."
+  },
+  {
+   "quote": "Bu sözleşmeden doğan uyuşmazlıklar münhasıran Delaware (ABD) mahkemelerinde, Delaware hukukuna göre çözülür ve üye toplu dava hakkından feragat eder.",
+   "explanation": "Kullanıcının yerel mahkemelerde hak aramasını engeller ve dava açma haklarını kısıtlar."
+  }
+ ]
+}

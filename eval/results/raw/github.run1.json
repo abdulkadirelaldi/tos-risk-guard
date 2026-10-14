@@ -1,0 +1,133 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Bu belge, GitHub hizmetlerinin kullanım şartlarını, kullanıcı içeriklerine ilişkin lisans haklarını, ödeme ve iptal koşullarını, sorumluluk sınırlamalarını ve yasal hükümleri düzenlemektedir.",
+ "score": 44,
+ "level": "orta",
+ "breakdown": [
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 10,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 2
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p36",
+   "quote": "You grant GitHub and our Affiliates the right to store, host, archive, parse, display, and make copies of Your Content as necessary to provide, develop, and improve the Service, including by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates.",
+   "explanation_tr": "Yüklediğiniz içerikler, yapay zeka modellerini eğitmek ve hizmeti geliştirmek amacıyla şirket ve iştirakleri tarafından kullanılmak üzere lisanslanır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "You grant GitHub and our Affiliates the right to store, host, archive, parse, display, and make copies of Your Content as necessary to provide, develop, and improve the Service, including by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates. This license includes the right to do things like copy it to our database and make backups; show it to you and other Users; parse it into a search index or otherwise analyze it on our servers; share it with other Users; and perform it, in case Your Content is something like music or video. For the avoidance of doubt, use of Your Content to develop, train, and improve artificial intelligence and machine learning models and technologies of GitHub and our Affiliates is within the scope of this license and does not constitute a sale or other restricted transfer of Your Content."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p145",
+   "quote": "GitHub provides the Website and the Service “as is” and “as available,” without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether express, implied or statutory, regarding the Website and the Service including without limitation any warranty of merchantability, fitness for a particular purpose, title, security, accuracy and non-infringement.",
+   "explanation_tr": "Hizmetler 'olduğu gibi' sunulur ve her türlü garanti reddedilir; doğruluk, güvenlik veya kesintisiz çalışacağı taahhüt edilmez.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "GitHub provides the Website and the Service “as is” and “as available,” without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether express, implied or statutory, regarding the Website and the Service including without limitation any warranty of merchantability, fitness for a particular purpose, title, security, accuracy and non-infringement."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p149",
+   "quote": "You understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, consequential or exemplary damages, however arising, that result from",
+   "explanation_tr": "Şirket, hizmetin kullanımından kaynaklanan kar, veri veya itibar kayıpları dahil hiçbir dolaylı veya özel zarardan sorumlu tutulamaz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "You understand and agree that we will not be liable to you or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, consequential or exemplary damages, however arising, that result from"
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p132",
+   "quote": "GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. GitHub reserves the right to refuse service to anyone for any reason at any time.",
+   "explanation_tr": "Şirket, herhangi bir gerekçe göstermeksizin veya bildirimde bulunmaksızın hesabınızı derhal askıya alabilir veya sonlandırabilir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. GitHub reserves the right to refuse service to anyone for any reason at any time."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p116",
+   "quote": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable. There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account",
+   "explanation_tr": "Abonelik ücretleri peşin tahsil edilir ve kullanılmayan dönemler veya kısmi aylar için para iadesi yapılmaz.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Payment Based on Plan For monthly or yearly payment plans, the Service is billed in advance on a monthly or yearly basis respectively and is non-refundable. There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account; however, the service will remain active for the length of the paid billing period. In order to treat everyone equally, no exceptions will be made."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p157",
+   "quote": "We reserve the right, at our sole discretion, to amend these Terms of Service at any time and will update these Terms of Service in the event of any such amendments. We will notify our Users of material changes to this Agreement, such as price increases, at least 30 days prior to the change taking effect by posting a notice on our Website or sending email",
+   "explanation_tr": "Şirket, koşulları dilediği zaman tek taraflı olarak değiştirebilir; esaslı değişiklikler için site üzerinden veya e-posta ile bildirim yapılır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "We reserve the right, at our sole discretion, to amend these Terms of Service at any time and will update these Terms of Service in the event of any such amendments. We will notify our Users of material changes to this Agreement, such as price increases, at least 30 days prior to the change taking effect by posting a notice on our Website or sending email to the primary email address specified in your GitHub account. Customer's continued use of the Service after those 30 days constitutes agreement to those revisions of this Agreement. For any other modifications, your continued use of the Website constitutes agreement to our revisions of these Terms of Service. You can view all changes to these Terms in our Site Policy repository."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p161",
+   "quote": "Except to the extent applicable law provides otherwise, this Agreement between you and GitHub and any access to or use of the Website or the Service are governed by the federal laws of the United States of America and the laws of the State of California, without regard to conflict of law provisions. You and GitHub agree to submit to the exclusive jurisdiction and venue of the courts located in the City and County of San Francisco, California.",
+   "explanation_tr": "Uyuşmazlık durumunda Amerika Birleşik Devletleri Kaliforniya eyalet yasaları geçerlidir ve San Francisco mahkemeleri yetkilidir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Except to the extent applicable law provides otherwise, this Agreement between you and GitHub and any access to or use of the Website or the Service are governed by the federal laws of the United States of America and the laws of the State of California, without regard to conflict of law provisions. You and GitHub agree to submit to the exclusive jurisdiction and venue of the courts located in the City and County of San Francisco, California. However, any claim for injunctive relief with respect to a violation of section D.9 may be brought in any jurisdiction."
+  }
+ ],
+ "rejected": [],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "yuksek",
+  "label": "Yüksek güven",
+  "reasons": [],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "GitHub Terms of Service - GitHub Docs",
+  "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 3834,
+  "sentParagraphs": 255,
+  "totalParagraphs": 255
+ }
+}

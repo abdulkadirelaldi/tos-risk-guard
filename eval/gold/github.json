@@ -1,0 +1,279 @@
+{
+  "id": "github",
+  "annotator": "claude-subagent (bağımsız, sistem çıktısını görmeden)",
+  "items": [
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p27",
+        "p34",
+        "p36",
+        "p225"
+      ],
+      "borderline": false,
+      "evidence": "You grant GitHub and our Affiliates the right to store, host, archive, parse, display, and make copies of Your Content as necessary to provide, develop, and improve the Service",
+      "note": "Kullanıcı içeriği için GitHub ve iştiraklerine (YZ eğitimi dahil) geniş lisans verilir; ücret ödenmez."
+    },
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p38",
+        "p39"
+      ],
+      "borderline": true,
+      "evidence": "you grant other Users a nonexclusive, worldwide license to use, display, perform and reproduce (by forking) Your Content through the Service",
+      "note": "Dünya çapında lisans şirkete değil diğer kullanıcılara verilir ve public repo seçimine bağlıdır; sınırda."
+    },
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p44",
+        "p45"
+      ],
+      "borderline": true,
+      "evidence": "you waive these rights and agree not to assert them against us or our Affiliates",
+      "note": "Manevi haklardan feragat; D.4 lisansının uzantısı, sınırda."
+    },
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p89",
+        "p90",
+        "p91",
+        "p92",
+        "p93",
+        "p237"
+      ],
+      "borderline": false,
+      "evidence": "You also grant GitHub and its Affiliates a license to collect and use your Inputs and Outputs to develop, train and improve artificial intelligence and machine learning models",
+      "note": "YZ girdi/çıktıları için GitHub ve iştiraklerine model eğitimi lisansı; opt-out mümkün."
+    },
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p187"
+      ],
+      "borderline": true,
+      "evidence": "If you provide your private repository content as Input to AI Features, we may use that Input to provide, develop, train, and improve the Service",
+      "note": "Özel repo içeriği YZ girdisi olursa eğitimde kullanılabilir; J.3'ün uzantısı, opt-out var."
+    },
+    {
+      "category": "icerik_lisansi",
+      "paragraph_ids": [
+        "p109"
+      ],
+      "borderline": false,
+      "evidence": "GitHub will have a royalty-free, fully paid-up, worldwide, transferable, sub-licensable, irrevocable and perpetual license",
+      "note": "Geri bildirim için dünya çapında, telifsiz, alt lisanslanabilir, geri alınamaz lisans."
+    },
+    {
+      "category": "ucuncu_taraf_veri_paylasimi",
+      "paragraph_ids": [
+        "p91"
+      ],
+      "borderline": true,
+      "evidence": "Unless you opt out, GitHub's Affiliates may use your Inputs and Outputs under this license",
+      "note": "Girdi/çıktılar iştiraklerle (Microsoft) paylaşılır; kişisel veri olup olmadığı belirsiz, üçüncü taraf YZ sağlayıcılarıyla paylaşım yok."
+    },
+    {
+      "category": "ucuncu_taraf_veri_paylasimi",
+      "paragraph_ids": [
+        "p36"
+      ],
+      "borderline": true,
+      "evidence": "technologies of our Affiliates",
+      "note": "İçerik iştiraklerin YZ modellerinin eğitiminde kullanılabilir; kişisel veri paylaşımı olarak sayılması tartışmalı."
+    },
+    {
+      "category": "genis_veri_toplama",
+      "paragraph_ids": [
+        "p90"
+      ],
+      "borderline": true,
+      "evidence": "a license to collect and use your Inputs and Outputs",
+      "note": "YZ girdileri (çalışma alanındaki kod, konuşma geçmişi) toplanır; klasik izleme/konum verisi değil, sınırda."
+    },
+    {
+      "category": "otomatik_yenileme",
+      "paragraph_ids": [
+        "p111",
+        "p113"
+      ],
+      "borderline": true,
+      "evidence": "prices are subject to change at the end of a payment term",
+      "note": "Fiyat dönem sonunda değişebilir; otomatik yenileme açıkça yazmıyor ve önceden bildirim vaadi var, sınırda."
+    },
+    {
+      "category": "iptal_iade_kisitlamasi",
+      "paragraph_ids": [
+        "p115",
+        "p116"
+      ],
+      "borderline": false,
+      "evidence": "There will be no refunds or credits for partial months of service, downgrade refunds, or refunds for months unused with an open Account",
+      "note": "Peşin ödemeler iade edilmez, kısmi dönem iadesi yoktur, istisna yapılmaz."
+    },
+    {
+      "category": "iptal_iade_kisitlamasi",
+      "paragraph_ids": [
+        "p118"
+      ],
+      "borderline": false,
+      "evidence": "Amounts payable under this Agreement are non-refundable, except as otherwise provided in this Agreement.",
+      "note": "Faturalı kullanıcılar için ödemeler iade edilmez."
+    },
+    {
+      "category": "hesap_kapatma",
+      "paragraph_ids": [
+        "p27",
+        "p132"
+      ],
+      "borderline": false,
+      "evidence": "GitHub has the right to suspend or terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately.",
+      "note": "Hesap/erişim her an, gerekçesiz ve bildirimsiz askıya alınabilir veya kapatılabilir."
+    },
+    {
+      "category": "hesap_kapatma",
+      "paragraph_ids": [
+        "p75"
+      ],
+      "borderline": true,
+      "evidence": "GitHub, in our sole discretion, will determine abuse or excessive usage of the API.",
+      "note": "API erişimi şirketin takdiriyle askıya alınabilir; yalnızca API erişimi ve e-posta uyarısı girişimi var, sınırda."
+    },
+    {
+      "category": "veri_saklama",
+      "paragraph_ids": [
+        "p128",
+        "p129"
+      ],
+      "borderline": false,
+      "evidence": "some information may remain in encrypted backups",
+      "note": "İptalden sonra yasal yükümlülükler için saklama; 90 gün içinde silme ama yedeklerde kalabilir, katkılar silinmez."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p144",
+        "p145",
+        "p146",
+        "p247"
+      ],
+      "borderline": false,
+      "evidence": "GitHub provides the Website and the Service “as is” and “as available,” without warranty of any kind.",
+      "note": "Hizmet 'olduğu gibi' sunulur, tüm garantiler reddedilir."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p148",
+        "p149",
+        "p150",
+        "p192",
+        "p193",
+        "p194",
+        "p195",
+        "p196",
+        "p197",
+        "p198",
+        "p199",
+        "p249"
+      ],
+      "borderline": false,
+      "evidence": "we will not be liable to you or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, consequential or exemplary damages",
+      "note": "Dolaylı zararlar dahil geniş sorumluluk sınırlaması."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p95"
+      ],
+      "borderline": false,
+      "evidence": "Output is provided \"as-is\" and subject to the disclaimers in Section O.",
+      "note": "YZ çıktıları 'olduğu gibi' sunulur, hatasızlık garanti edilmez."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p103"
+      ],
+      "borderline": true,
+      "evidence": "By using a Beta Preview, you use it at your own risk.",
+      "note": "Beta özellikler kullanıcının riskindedir; dar kapsamlı, sınırda."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p179"
+      ],
+      "borderline": true,
+      "evidence": "GitHub cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.",
+      "note": "Kullanıcının güvenlik ihlalinden doğan zararlardan sorumluluk reddi; dar kapsamlı."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p29"
+      ],
+      "borderline": true,
+      "evidence": "We are not responsible for any public display or misuse of Your Content.",
+      "note": "İçeriğin kötüye kullanımından sorumluluk reddi; sınırda."
+    },
+    {
+      "category": "sorumluluk_sinirlamasi",
+      "paragraph_ids": [
+        "p153"
+      ],
+      "borderline": true,
+      "evidence": "you agree to release GitHub from any and all claims, demands and damages",
+      "note": "Kullanıcılar arası uyuşmazlıklarda GitHub ibra edilir; sorumluluk sınırlaması niteliğinde, sınırda."
+    },
+    {
+      "category": "tek_tarafli_degisiklik",
+      "paragraph_ids": [
+        "p156",
+        "p157",
+        "p253"
+      ],
+      "borderline": false,
+      "evidence": "For any other modifications, your continued use of the Website constitutes agreement to our revisions of these Terms of Service.",
+      "note": "Şirket koşulları tek taraflı değiştirebilir; önemli değişikliklerde 30 gün bildirim, diğerlerinde kullanıma devam onay sayılır."
+    },
+    {
+      "category": "tek_tarafli_degisiklik",
+      "paragraph_ids": [
+        "p169"
+      ],
+      "borderline": false,
+      "evidence": "or by the posting by GitHub of a revised version in accordance with Section R.",
+      "note": "Sözleşme revize sürümün yayınlanmasıyla değiştirilebilir (Bölüm R'ye atıf)."
+    },
+    {
+      "category": "tek_tarafli_degisiklik",
+      "paragraph_ids": [
+        "p158"
+      ],
+      "borderline": true,
+      "evidence": "modify or discontinue, temporarily or permanently, the Website (or any part of it) with or without notice",
+      "note": "Hizmetin bildirimsiz değiştirilmesi/durdurulması; koşul değil hizmet değişikliği, sınırda."
+    },
+    {
+      "category": "tek_tarafli_degisiklik",
+      "paragraph_ids": [
+        "p201"
+      ],
+      "borderline": true,
+      "evidence": "procedures that we may publish from time to time on the Website",
+      "note": "Sözleşme zaman zaman yayınlanan politikaları kapsar; dolaylı tek taraflı değişiklik, sınırda."
+    },
+    {
+      "category": "yabanci_yetki_hukuk",
+      "paragraph_ids": [
+        "p161"
+      ],
+      "borderline": false,
+      "evidence": "You and GitHub agree to submit to the exclusive jurisdiction and venue of the courts located in the City and County of San Francisco, California.",
+      "note": "ABD/Kaliforniya hukuku ve San Francisco mahkemeleri münhasır yetkili."
+    }
+  ]
+}

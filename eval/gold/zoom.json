@@ -1,0 +1,435 @@
+{
+ "id": "zoom",
+ "annotator": "claude-subagent (bağımsız, sistem çıktısını görmeden)",
+ "items": [
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_ids": [
+    "p62"
+   ],
+   "borderline": false,
+   "evidence": "Hizmetlere ilişkin her bir Yenileme Dönemi, o sıradaki geçerli İlk Abonelik Dönemi veya geçerli Yenileme Dönemi sonunda otomatik olarak başlayacaktır",
+   "note": "30 gün önceden yazılı fesih bildirimi yapılmazsa abonelik otomatik yenilenir."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_ids": [
+    "p45"
+   ],
+   "borderline": false,
+   "evidence": "Zoom, kendi takdirine bağlı olarak herhangi bir zamanda Hizmet fiyatlarını değiştirebilir.",
+   "note": "Fiyat tek taraflı değiştirilebilir; 30 gün bildirim var, fesih edilmezse otomatik kabul sayılır."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_ids": [
+    "p46"
+   ],
+   "borderline": true,
+   "evidence": "İndirim veya tanıtım fiyatları, size ek bildirimde bulunulmadan sona erebilir.",
+   "note": "Tanıtım fiyatı bildirimsiz bitebilir; fiilen fiyat artışı ama tanıtım fiyatına özgü."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_ids": [
+    "p5"
+   ],
+   "borderline": true,
+   "evidence": "12. ve 14. Maddede bazı şartlar ve koşullar, tekrarlanan abonelik Ücretleri ve otomatik yenilemeler için geçerlidir",
+   "note": "Giriş özeti otomatik yenilemeye atıf yapıyor; asıl hüküm p62."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_ids": [
+    "p44"
+   ],
+   "borderline": false,
+   "evidence": "Ödemelerin tamamının İlk Abonelik Süresi boyunca ve varsa sonraki güncel Yenileme Süresi boyunca iptal edilemez olduğunu, nihai olduğunu ve geri ödenemez olduğunu kabul etmektesiniz",
+   "note": "Ücretler iptal edilemez ve iade edilmez."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_ids": [
+    "p65"
+   ],
+   "borderline": false,
+   "evidence": "önceden ödediğiniz Ücretlerin, geçerli Kanunlar uyarınca yasaklanmadığı takdirde Zoom tarafından alıkonulması da dahil",
+   "note": "Fesihte önceden ödenen ücretler alıkonur; askıya alma süresince de ücret borcu sürer."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_ids": [
+    "p63"
+   ],
+   "borderline": true,
+   "evidence": "bu fesih, Madde 14.1 uyarınca düzgün ve zamanında bildirimde bulunmanız kaydıyla söz konusu Hizmetlerin her biri için o zamanki sürelerinin son gününde geçerli olacaktır",
+   "note": "Kullanıcı feshi dönem sonunda geçerli; kısmi dönem iadesi yok anlamına gelir ama açıkça söylenmemiş."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_ids": [
+    "p51"
+   ],
+   "borderline": true,
+   "evidence": "Hizmetler, herhangi bir çekilme ve soğuma döneminden önce başlarsa veya çekilme hakkı ya da soğuma dönemi içinde Hizmetleri feshetmezseniz işbu Madde 12.9 kapsamındaki her türlü fesih hakkınızı kaybet",
+   "note": "Cayma hakkı tanıyor (koruyucu) ama hizmet başlarsa cayma hakkı kaybediliyor."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_ids": [
+    "p68"
+   ],
+   "borderline": false,
+   "evidence": "Zoom, işbu Madde 15.1 uyarınca zaman zaman bu Sözleşmede değişiklikler, silmeler ve eklemeler (\"Değişiklikler\") yapabilir.",
+   "note": "Değişiklikler sitede yayımlanır, kullanmaya devam etmek kabul sayılır; açık onay yalnızca bazı durumlarda."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_ids": [
+    "p69",
+    "p70"
+   ],
+   "borderline": false,
+   "evidence": "size bildirimde bulunarak veya bulunmadan ve Hizmetleri kullanımınız için geçerli benzer yönetmeliklerde, beyanlarda ve bildirimler için ilgili web sayfasında güncellenmiş bir sürümünü yayımlayarak",
+   "note": "Politikalar bildirimsiz, yalnızca web sayfasında yayımlanarak değiştirilebilir; takip yükü kullanıcıda."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_ids": [
+    "p5"
+   ],
+   "borderline": true,
+   "evidence": "Zoom bu Hizmet Şartları'nda ve Hizmet Açıklamamız'da değişiklikler, silmeler ve eklemeler yapabilir",
+   "note": "Giriş özeti; asıl hüküm p68."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_ids": [
+    "p10"
+   ],
+   "borderline": true,
+   "evidence": "Zoom, kendi takdirine göre (i) Hizmetleri sonlandırabilir veya (ii) Hizmetlerin ya da Yazılımların özelliklerini veya işlevlerini değiştirebilir.",
+   "note": "Koşullar değil hizmet özellikleri tek taraflı değiştirilebilir."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_ids": [
+    "p48"
+   ],
+   "borderline": true,
+   "evidence": "standart desteğinde değişiklik yapma ve size standart destek ücreti uygulama",
+   "note": "Destek koşulları ve ücretlendirmesi tek taraflı değiştirilebilir."
+  },
+  {
+   "category": "ucuncu_taraf_veri_paylasimi",
+   "paragraph_ids": [
+    "p36"
+   ],
+   "borderline": true,
+   "evidence": "danışmanlar, yükleniciler, hizmet sağlayıcılar, alt işleyiciler ve Zoom tarafından yetkilendirilen başka üçüncü taraflar kullanabilir",
+   "note": "Hizmet sağlayıcı/alt işleyicilerle paylaşım; reklam amaçlı değil."
+  },
+  {
+   "category": "ucuncu_taraf_veri_paylasimi",
+   "paragraph_ids": [
+    "p78"
+   ],
+   "borderline": true,
+   "evidence": "Zoom, Müşteri Gizli Bilgilerini kendi danışmanlarına, yüklenicilerine, hizmet sağlayıcılarına, alt işleyicilerine ve en azından buradaki gizlilik hükümleri kadar koruyucu gizlilik yükümlülüklerine tab",
+   "note": "Gizli bilgiler üçüncü taraflara açıklanabilir; gizlilik yükümlülüğü şartıyla."
+  },
+  {
+   "category": "ucuncu_taraf_veri_paylasimi",
+   "paragraph_ids": [
+    "p131"
+   ],
+   "borderline": true,
+   "evidence": "kişisel verilerinizi toplamamızın, paylaşmamızın ve işlememizin",
+   "note": "Paylaşım Gizlilik Bildirimine atıfla kabul ettiriliyor; kime paylaşıldığı belirtilmemiş."
+  },
+  {
+   "category": "genis_veri_toplama",
+   "paragraph_ids": [
+    "p38"
+   ],
+   "borderline": false,
+   "evidence": "Telemetri verisini, ürün kullanım verilerini, tanı verilerini ve benzer Hizmetlerin veya Yazılımın",
+   "note": "Telemetri, kullanım ve tanı verileri toplanır ve mülkiyeti Zoom'a aittir."
+  },
+  {
+   "category": "genis_veri_toplama",
+   "paragraph_ids": [
+    "p124"
+   ],
+   "borderline": true,
+   "evidence": "teknik ve diğer verileri tanımlanmamış veya anonimleştirilmiş bir esasta (\"Toplu Anonim Veriler\") toplayabileceğini",
+   "note": "Anonimleştirilmiş kullanım verisi toplanıyor; kişisel olmadığı için sınırda."
+  },
+  {
+   "category": "icerik_lisansi",
+   "paragraph_ids": [
+    "p34"
+   ],
+   "borderline": false,
+   "evidence": "Zoom'a kalıcı, geri alınamaz, dünya çapında geçerli, münhasır olmayan, telifsiz, alt lisanslandırılabilir ve devredilebilir bir lisans",
+   "note": "Müşteri İçeriği için kalıcı, dünya çapında, alt lisanslanabilir lisans (İzin Verilen Kullanımlarla sınırlı)."
+  },
+  {
+   "category": "icerik_lisansi",
+   "paragraph_ids": [
+    "p72"
+   ],
+   "borderline": true,
+   "evidence": "Geri Bildirime ilişkin tüm hak, menfaat ve çıkarları, bunlara ilişkin tüm Mülkiyet Hakları da dahil olmak üzere işbu Sözleşmeyle koşulsuz ve gayrikabili rücu olarak Zoom'a hem kendi adınıza temlik etm",
+   "note": "Geri bildirim üzerindeki tüm haklar devrediliyor; yüklenen içerik değil, geri bildirim."
+  },
+  {
+   "category": "icerik_lisansi",
+   "paragraph_ids": [
+    "p135"
+   ],
+   "borderline": true,
+   "evidence": "sizi bir müşteri olarak tanımlaması ve logonuzu Zoom pazarlama materyallerinde",
+   "note": "Logo/marka pazarlamada kullanım izni; vaka çalışması için yazılı onay gerekli."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p102",
+    "p103"
+   ],
+   "borderline": false,
+   "evidence": "Taraflar, herhangi bir tür toplu ya da kitlesel davaya veya grup davasına, özel avukat yoluyla genel davaya ya da başka bir temsili davaya başvurma veya dahil olma hakkından açıkça feragat etmektedir.",
+   "note": "Uyuşmazlıklar bağlayıcı tahkime gider ve toplu davadan feragat edilir."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p110"
+   ],
+   "borderline": false,
+   "evidence": "mahkemede dava açma ve bir yargıç veya jüri huzurunda duruşma talep etmeye ilişkin her türlü anayasal ve yasal haklarınızdan feragat etmektesiniz",
+   "note": "Jüri duruşmasından feragat."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p111"
+   ],
+   "borderline": false,
+   "evidence": "toplu, kitlesel, temsili dava veya grup davası açamayacağını",
+   "note": "Toplu dava feragati ayrı madde olarak."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p5"
+   ],
+   "borderline": true,
+   "evidence": "mahkemeye gitmek yerine bazı talepleri hakem yoluyla çözeceksiniz ve Zoom aleyhine toplu dava açmayacaksınız",
+   "note": "Giriş özeti; asıl hüküm 27. Madde."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p105"
+   ],
+   "borderline": true,
+   "evidence": "Bu Madde 27.3'e uymanızın tahkime başlamak için bir ön koşul olduğunu",
+   "note": "Zorunlu tahkim öncesi talep prosedürü; tahkim mekanizmasının parçası."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p106",
+    "p107",
+    "p108"
+   ],
+   "borderline": true,
+   "evidence": "İşbu Tahkim Anlaşmasının ABD Federal Tahkim Kanununa (“FAA”) tabi olduğunu",
+   "note": "Tahkim usulü (FAA, NAM/ADR); zorunlu tahkimin detayları."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p112",
+    "p113"
+   ],
+   "borderline": true,
+   "evidence": "elli (50) veya daha fazla bireysel tahkim talebinde bulunulması halinde (\"Toplu Başvuru\")",
+   "note": "Toplu tahkim başvurularını kısıtlayan öncelikli tahkim mekanizması."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_ids": [
+    "p120"
+   ],
+   "borderline": true,
+   "evidence": "söz konusu talepten veya dava nedeninden sonraki bir (1) yıl içinde başvuru yapılmalıdır, aksi halde bu talep veya dava nedeni kalıcı olarak engellenecektir",
+   "note": "Dava hakkını kısaltan 1 yıllık süre; tahkim kategorisine tam uymayabilir."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p93"
+   ],
+   "borderline": false,
+   "evidence": "HİZMETLERİN VE YAZILIMIN \"OLDUĞU GİBİ\" SAĞLANDIĞINI KABUL EDERSİNİZ",
+   "note": "Hizmet olduğu gibi sunulur, tüm garantiler reddedilir, veri saklama sorumluluğu yok."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p97",
+    "p98",
+    "p99",
+    "p100",
+    "p168",
+    "p169",
+    "p170",
+    "p171",
+    "p172",
+    "p173",
+    "p174"
+   ],
+   "borderline": false,
+   "evidence": "ZOOM VE BAĞLI KURULUŞLARI VE ONLARIN HER BİR TEDARİKÇİSİ VE LİSANS VERENİ AŞAĞIDAKİLERİNDEN HİÇBİRİNDEN SORUMLU OLMAYACAKTIR:",
+   "note": "Dolaylı zarar, kâr/veri kaybı vb. için sorumluluk dışlanıyor; liste maddeleri belgenin sonuna ayrışmış."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p175"
+   ],
+   "borderline": false,
+   "evidence": "ON İKİ (12) AYDA HİZMETLER İÇİN FİİLEN ÖDEDİĞİNİZ MİKTARI AŞAN TAZMİNAT TALEPLERİ",
+   "note": "Sorumluluk son 12 ayda ödenen tutarla sınırlanıyor."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p20"
+   ],
+   "borderline": false,
+   "evidence": "hiçbir koşulda sorumlu olmayacaktır",
+   "note": "İçerik/veri hataları ve erişim sorunları için sorumluluk tamamen reddediliyor."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p19"
+   ],
+   "borderline": true,
+   "evidence": "hiçbir sorumluluk veya yükümlülük üstlenmemektedir",
+   "note": "Son kullanıcı/üçüncü taraf ihlallerinden sorumluluk reddi."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p87"
+   ],
+   "borderline": true,
+   "evidence": "Zoom, hiçbir Üçüncü Taraf Teklifinin birlikte çalışabilmesini, entegrasyonunu veya desteğini garanti etmez.",
+   "note": "Üçüncü taraf entegrasyonları için sorumluluk ve garanti reddi."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_ids": [
+    "p5"
+   ],
+   "borderline": true,
+   "evidence": "Zoom'u belirli zararlardan ber'i kılmaktasınız ve tazminat talep etme hakkınızdan feragat etmektesiniz",
+   "note": "Giriş özeti; asıl hüküm 26. Madde."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_ids": [
+    "p14"
+   ],
+   "borderline": false,
+   "evidence": "Hizmetlere ve Yazılımlara erişiminizin ve bunları kullanımınızın Zoom'un kendi takdirine göre iptal edilebileceğini",
+   "note": "Erişim Zoom'un takdirine göre iptal edilebilir."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_ids": [
+    "p21"
+   ],
+   "borderline": false,
+   "evidence": "hesapları veya Son Kullanıcı profillerini sonlandırma ya da başka makul eylemlerde bulunma dahil olmak üzere kendi takdirine göre",
+   "note": "Şikayet üzerine kendi takdirine göre askıya alma/hesap sonlandırma."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_ids": [
+    "p49"
+   ],
+   "borderline": false,
+   "evidence": "Zoom, Hizmetlerinizi derhal ve önceden bildirimde bulunmaksızın feshedebilir, askıya alabilir veya bağlantısını kesebilir.",
+   "note": "Ödeme 5 gün gecikirse bildirimsiz fesih/askıya alma (gerekçe var ama bildirimsiz)."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_ids": [
+    "p64"
+   ],
+   "borderline": false,
+   "evidence": "Zoom, bu Sözleşmeyi otuz (30) iş günü önceden bildirimle herhangi bir nedenle veya nedensiz olarak feshedebilir.",
+   "note": "Herhangi bir ihlalde derhal askıya alma; ayrıca nedensiz fesih hakkı (30 gün bildirimli)."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_ids": [
+    "p40"
+   ],
+   "borderline": true,
+   "evidence": "erişiminiz, uyarıda bulunulmaksızın feshedilebilir",
+   "note": "Yaş/uygunluk eksikliğinde uyarısız fesih; gerekçeye bağlı."
+  },
+  {
+   "category": "veri_saklama",
+   "paragraph_ids": [
+    "p66"
+   ],
+   "borderline": true,
+   "evidence": "Müşteri İçeriğiniz geçerli Kanun, işbu Sözleşme ve düzenli olarak planladığımız silme protokollerimiz, politikalarımız ve prosedürlerimiz uyarınca silinecektir",
+   "note": "30 gün sonra silinir ama kesin silme süresi iç protokollere bırakılmış."
+  },
+  {
+   "category": "veri_saklama",
+   "paragraph_ids": [
+    "p124"
+   ],
+   "borderline": true,
+   "evidence": "bu Sözleşmenin süresi boyunca ve sonrasında",
+   "note": "Anonim toplu veriler sözleşme sonrasında da kullanılmaya devam eder."
+  },
+  {
+   "category": "veri_saklama",
+   "paragraph_ids": [
+    "p27"
+   ],
+   "borderline": true,
+   "evidence": "Hizmetleri kullanmak suretiyle, kayıtları saklaması için Zoom'a yetki vermektesiniz.",
+   "note": "Kayıtların saklanmasına yetki; süre belirtilmemiş."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_ids": [
+    "p139"
+   ],
+   "borderline": false,
+   "evidence": "ABD'nin Kaliforniya Eyaleti yasaları, yasaların çatışması ilkelerine bakılmaksızın",
+   "note": "Kaliforniya hukuku ve Santa Clara mahkemeleri münhasır yetkili; Türkiye'deki kullanıcı için yabancı."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_ids": [
+    "p111"
+   ],
+   "borderline": true,
+   "evidence": "Kaliforniya, San Jose'de bulunan eyalet mahkemeleri veya federal mahkemeler tarafından takip edileceğini",
+   "note": "Tahkimden ayrılan talepler için San Jose mahkemeleri yetkili."
+  }
+ ]
+}

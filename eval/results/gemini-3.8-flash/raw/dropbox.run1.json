@@ -1,0 +1,172 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Bu metin Dropbox'ın genel kullanım koşullarını, ücretli abonelik süreçlerini ve yasal sorumluluk sınırlarını düzenlemektedir. Sözleşme; otomatik yenilenen ödemeleri, yasal zorunluluk harici iade yapılmamasını, kapsamlı sorumluluk retlerini ve uyuşmazlıklarda zorunlu tahkim ile Kaliforniya hukukunun geçerliliğini içerir.",
+ "score": 72,
+ "level": "yuksek",
+ "breakdown": [
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 15,
+   "count": 1
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 2
+  },
+  {
+   "category": "otomatik_yenileme",
+   "label": "Otomatik yenileme / ücretlendirme",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 2
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p45",
+   "quote": "You may cancel your Paid Account at any time. Refunds are only issued if required by law.",
+   "explanation_tr": "Aboneliğinizi dilediğiniz zaman iptal edebilirsiniz ancak yasaların zorunlu kıldığı durumlar haricinde para iadesi yapılmaz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Cancellation. You may cancel your Paid Account at any time. Refunds are only issued if required by law. For example, users living in the European Union have the right to cancel their Paid Account subscriptions and obtain a refund within 14 days of signing up for, upgrading to, or renewing a Paid Account by clicking here."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p55",
+   "quote": "Once we suspend or terminate your access to the Services, you will not be able to access or export Your Stuff. Dropbox does not provide refunds if we suspend or terminate your access to the Services, unless required by law.",
+   "explanation_tr": "Hesabınız askıya alınır veya kapatılırsa verilerinize erişemez ya da dışa aktaramazsınız ve kural olarak herhangi bir ücret iadesi alamazsınız.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Once we suspend or terminate your access to the Services, you will not be able to access or export Your Stuff. Dropbox does not provide refunds if we suspend or terminate your access to the Services, unless required by law."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p65",
+   "quote": "WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX.",
+   "explanation_tr": "Dropbox'ın size karşı doğabilecek toplam maddi sorumluluğu en fazla 20 dolar veya ödediğiniz abonelik ücreti ile sınırlandırılmıştır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "OTHER THAN FOR THE TYPES OF LIABILITY WE CANNOT LIMIT BY LAW (AS DESCRIBED IN THIS SECTION), WE LIMIT OUR LIABILITY TO YOU TO THE GREATER OF $20 USD OR 100% OF ANY AMOUNT YOU'VE PAID UNDER YOUR CURRENT SERVICE PLAN WITH DROPBOX. THIS PROVISION DOES NOT APPLY TO EU CONSUMERS WHERE PROHIBITED BY APPLICABLE LAW."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p70",
+   "quote": "You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below.",
+   "explanation_tr": "Uyuşmazlıkların mahkeme yerine bağlayıcı bireysel tahkim yoluyla çözülmesi zorunlu tutulmaktadır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "We Both Agree to Arbitrate. You and Dropbox agree to resolve any claims relating to or arising out of these Terms or the Services through final and binding individual arbitration by a single arbitrator, except as set forth under the “Exceptions to Agreement to Arbitrate” below. This includes disputes arising out of or relating to the interpretation or application of this “Mandatory Arbitration Provisions” section, including its scope, enforceability, revocability, or validity. The arbitrator may award relief only individually and only to the extent necessary to redress your individual claim(s); the arbitrator may not award relief on behalf of others or the general public."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p75",
+   "quote": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action.",
+   "explanation_tr": "Şirkete karşı toplu dava açma veya açılmış bir toplu davaya katılma hakkınızdan feragat edersiniz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "NO CLASS OR REPRESENTATIVE ACTIONS. You may only resolve disputes with us on an individual basis, and may not bring a claim as a plaintiff or a class member in a class, consolidated, or representative action. Class arbitrations, class actions, private attorney general actions, and consolidation with other arbitrations aren’t allowed."
+  },
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p12",
+   "quote": "To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with.",
+   "explanation_tr": "Yüklediğiniz dosyalara ve içeriklere Dropbox'ın ve birlikte çalıştığı üçüncü tarafların erişmesine, bunları taramasına ve saklamasına izin vermiş olursunuz.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "We need your permission to do things like hosting Your Stuff, backing it up, and sharing it when you ask us to. Our Services also provide you with features like commenting, sharing, searching, image thumbnails, document previews, optical character recognition (OCR), easy sorting and organization, and personalization to help reduce busywork. To provide these and other features, Dropbox accesses, stores, and scans Your Stuff. You give us permission to do those things, and this permission extends to our affiliates and trusted third parties we work with."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p44",
+   "quote": "We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation.",
+   "explanation_tr": "Ücretli aboneliğiniz siz iptal edene kadar her dönem otomatik olarak yenilenir ve kartınızdan tahsilat yapılır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Billing. You can increase your storage space and add paid features to your account (turning your account into a “Paid Account”). We’ll automatically bill you from the date you convert to a Paid Account and on each periodic renewal until cancellation. If you’re on an annual plan, we’ll send you a notice email reminding you that your plan is about to renew within a reasonable period of time prior to the renewal date. You’re responsible for all applicable taxes, and we’ll charge tax when required to do so. Some countries have mandatory local laws regarding your cancellation rights, and this paragraph doesn’t override these laws."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p59",
+   "quote": "THE SERVICES ARE PROVIDED \"AS IS.\" WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.",
+   "explanation_tr": "Hizmet herhangi bir garanti olmaksızın 'olduğu gibi' sunulur; şirket kesintisizlik veya amaca uygunluk konusunda sorumluluk kabul etmez.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "We strive to provide great Services, but there are certain things that we can't guarantee. TO THE FULLEST EXTENT PERMITTED BY LAW, DROPBOX AND ITS AFFILIATES, SUPPLIERS AND DISTRIBUTORS MAKE NO WARRANTIES, EITHER EXPRESS OR IMPLIED, ABOUT THE SERVICES. THE SERVICES ARE PROVIDED \"AS IS.\" WE ALSO DISCLAIM ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. Some places don’t allow the disclaimers in this paragraph, so they may not apply to you. For example, these disclaimers do not override the legal protections, including statutory warranties, granted to consumers by EU law."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p78",
+   "quote": "These Terms will be governed by California law except for its conflicts of laws principles.",
+   "explanation_tr": "Sözleşmeden doğan uyuşmazlıklarda yerel tüketici yasalarının izin verdiği istisnalar saklı kalmak üzere Kaliforniya hukuku geçerlidir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "These Terms will be governed by California law except for its conflicts of laws principles. However, some countries (including those in the European Union) have laws that require agreements to be governed by the local laws of the consumer's country. This paragraph doesn’t override those laws."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p86",
+   "quote": "By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms.",
+   "explanation_tr": "Şartlar güncellendikten sonra hizmeti kullanmaya devam etmeniz, yapılan değişiklikleri kabul ettiğiniz anlamına gelir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "If you don’t agree to the updates we make, please cancel your account and stop using the Services before the updated Terms become effective. Where applicable, we’ll offer you a prorated refund based on the amounts you have prepaid for Services and your account cancellation date. By continuing to use or access the Services after the updates come into effect, you agree to be bound by the revised Terms."
+  }
+ ],
+ "rejected": [],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "yuksek",
+  "label": "Yüksek güven",
+  "reasons": [],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Terms of Service - Dropbox",
+  "url": "https://www.dropbox.com/terms",
+  "model": "gemini-3.8-flash",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 59236,
+  "sentParagraphs": 97,
+  "totalParagraphs": 97
+ }
+}

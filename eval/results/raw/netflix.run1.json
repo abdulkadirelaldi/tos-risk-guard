@@ -1,0 +1,154 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Netflix kullanım koşulları belgesi; abonelik şartları, ödemeler, otomatik yenileme, içerik kısıtlamaları, kullanıcı yükümlülükleri ve sorumluluk sınırlamaları gibi kuralları içermektedir.",
+ "score": 61,
+ "level": "yuksek",
+ "breakdown": [
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 1
+  },
+  {
+   "category": "otomatik_yenileme",
+   "label": "Otomatik yenileme / ücretlendirme",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 5,
+   "count": 1
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  },
+  {
+   "category": "hesap_kapatma",
+   "label": "Gerekçesiz hesap kapatma",
+   "points": 3,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p44",
+   "quote": "Netflix hizmeti \"olduğu gibi\" ve taahhüt ya da koşul olmaksızın sunulmaktadır. Özellikle belirtmek gerekirse, hizmetimiz kesintisiz veya hatasız olmayabilir. Tarafımıza karşı tüm özel, dolaylı ya da bağlı hasarlardan feragat etmiş sayılırsınız.",
+   "explanation_tr": "Hizmetin hatasız olacağı garanti edilmez ve dolaylı zararlar için şirket sorumlu tutulamaz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "5. Garantiler ve Sorumluluğun Sınırlandırılması. Netflix hizmeti \"olduğu gibi\" ve taahhüt ya da koşul olmaksızın sunulmaktadır. Özellikle belirtmek gerekirse, hizmetimiz kesintisiz veya hatasız olmayabilir. Tarafımıza karşı tüm özel, dolaylı ya da bağlı hasarlardan feragat etmiş sayılırsınız. Bu koşullar, feragat edilemez herhangi bir garantiyi veya ikamet ettiğiniz ülkenin zorunlu yasaları uyarınca sahip olabileceğiniz tüketici koruma haklarını sınırlandırmamaktadır."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p45",
+   "quote": "İLGİLİ KANUN KAPSAMINDA İZİN VERİLDİĞİ HÂLLERDE, NETFLIX VE SİZ, YALNIZCA BİREYSEL OLARAK BİRBİRİNİZE KARŞI TALEPTE BULUNABİLECEĞİNİZİ VE HERHANGİ BİR TOPLU YA DA TEMSİLÎ DAVANIN DAVACISI YA DA TOPLULUK ÜYESİ OLARAK TALEPTE BULUNAMAYACAĞINIZI KABUL ETMİŞ SAYILIRSINIZ.",
+   "explanation_tr": "Kullanıcılar toplu dava hakkından feragat eder ve haklarını yalnızca bireysel olarak arayabilir.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "6. Toplu Davadan Feragat. İLGİLİ KANUN KAPSAMINDA İZİN VERİLDİĞİ HÂLLERDE, NETFLIX VE SİZ, YALNIZCA BİREYSEL OLARAK BİRBİRİNİZE KARŞI TALEPTE BULUNABİLECEĞİNİZİ VE HERHANGİ BİR TOPLU YA DA TEMSİLÎ DAVANIN DAVACISI YA DA TOPLULUK ÜYESİ OLARAK TALEPTE BULUNAMAYACAĞINIZI KABUL ETMİŞ SAYILIRSINIZ. Ayrıca, ilgili kanun kapsamında izin verildiği hâllerde, aksi Netflix ve tarafınızca kararlaştırılmadığı takdirde mahkeme, birden fazla kişinin talebini sizin talebinizle birleştiremez ve başka şekilde herhangi bir temsilî ya da toplu davaya başkanlık edemez."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p33",
+   "quote": "Aboneliğinizi fatura kesim tarihinden önce iptal etmediğiniz sürece, tarafımıza bir sonraki faturalama döneminin abonelik ücretini Ödeme Yöntemi üzerinden tahsil etme yetkisi vermiş olursunuz",
+   "explanation_tr": "Aboneliğinizi iptal etmediğiniz sürece her ay otomatik olarak ücret tahsil edilir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "2.1. Faturalama Dönemi ve Ödeme Koşulları. Netflix aboneliğiniz, sonlandırılıncaya kadar devam eder. Abonelik satın almak için hesabınıza bir veya daha fazla Ödeme Yöntemi eklemeniz gerekir. “Ödeme Yöntemi”, zaman zaman güncelleyebileceğiniz ve üçüncü taraf nezdindeki hesabınız üzerinden ödemeyi de içerebilecek, mevcut, geçerli, kabul gören bir ödeme yöntemi anlamına gelir. Aboneliğinizi fatura kesim tarihinden önce iptal etmediğiniz sürece, tarafımıza bir sonraki faturalama döneminin abonelik ücretini Ödeme Yöntemi üzerinden tahsil etme yetkisi vermiş olursunuz (bkz. aşağıdaki “Üyelik İptali” bölümü). Abonelik ücreti ve hizmeti kullanımınıza bağlı ortaya çıkabilecek vergi ve olası işlem ücretleri gibi diğer tüm ücretler, \"Hesap\" sayfasında belirtilen belli ödeme tarihinde, seçtiğiniz Ödeme Yöntemi üzerinden tahsil edilecektir. Faturalama döneminizin uzunluğu, hizmete kaydolduğunuzda seçtiğiniz abonelik planı türüne bağlı olacaktır. Ödeme Yönteminizin onaylanamaması, abonelik planınızı değiştirmeniz ya da ücretli aboneliğinizin söz konusu aya dâhil olmayan bir günde başlaması gibi durumlarda ödeme tarihinizde değişiklikler yaşanabilir. Bir sonraki ödeme tarihinizi “Hesap” sayfasında görebilirsiniz. Ödeme yönteminizi doğrulamak ve abonelik satın aldığınız anda bir aya kadar olan hizmetin önceden otomatik olarak alınması dâhil olmak üzere çeşitli yöntemlerle gelecekteki ücretleri karşılamak için ödeme yönteminizi yetkilendirebiliriz. Netflix'e kaydolurken Ödeme Yöntemi olarak üçüncü taraf nezdindeki hesabınızı kullandıysanız Netflix aboneliğinize ilişkin faturalama bilgilerine ilgili üçüncü tarafta bulunan hesabınıza giderek ulaşabilirsiniz."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p38",
+   "quote": "İlgili yasaların izin verdiği ölçüde ödemelerin iadesi yoktur ve tamamlanmamış abonelik dönemleri ya da kullanılmamış Netflix içerikleri için tarafımızca para iadesi ya da kredi tanımlaması yapılmamaktadır.",
+   "explanation_tr": "İptal edilen dönemler için para iadesi yapılmaz.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "2.6. İptal. Netflix aboneliğinizi istediğiniz zaman iptal edebilirsiniz. Üyeliğinizi iptal etmek için, \"Hesap\" sayfasına gidiniz ve iptal işlemlerine yönelik talimatları izleyiniz. İptal işlemi, faturalama dönemi sonunda geçerlilik kazanır. İlgili yasaların izin verdiği ölçüde ödemelerin iadesi yoktur ve tamamlanmamış abonelik dönemleri ya da kullanılmamış Netflix içerikleri için tarafımızca para iadesi ya da kredi tanımlaması yapılmamaktadır. Aboneliğinizin ne zaman sona ereceğini “Hesap” sayfasında görebilirsiniz. Netflix'e kaydolurken Ödeme Yöntemi olarak üçüncü taraf nezdindeki hesabınızı kullandıysanız ve Netflix aboneliğinizi iptal etmek istiyorsanız bu işlemi söz konusu üçüncü taraf aracılığıyla yapmanız, örneğin; söz konusu üçüncü taraf nezdindeki hesabınıza erişip otomatik yenilemeyi kapatmanız ya da söz konusu üçüncü taraf üzerinden Netflix hizmeti aboneliğini sonlandırmanız gerekebilir."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p47",
+   "quote": "Bu Kullanım Koşulları, Hollanda kanunlarına tabidir ve yine Hollanda kanunları kapsamında yorumlanabilir.",
+   "explanation_tr": "Uyuşmazlıklarda yabancı ülke hukuku geçerli olur.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "7.1. Geçerli Hukuk. Bu Kullanım Koşulları, Hollanda kanunlarına tabidir ve yine Hollanda kanunları kapsamında yorumlanabilir. Bu koşullar, ikamet ettiğiniz ülkenin zorunlu yasaları uyarınca sahip olabileceğiniz tüketici koruma haklarını sınırlandırmamaktadır."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p52",
+   "quote": "Bu Kullanım Koşullarını zaman zaman değiştirebiliriz. Somut değişiklikler olması durumunda, bu değişiklikler sizin için geçerli olmadan en az bir ay önce sizi bilgilendireceğiz.",
+   "explanation_tr": "Şirket, kullanım koşullarında tek taraflı değişiklik yapabilir.",
+   "severity": "dusuk",
+   "idCorrected": false,
+   "paragraphText": "7.6. Bu Koşullarda Yapılacak Değişiklikler ve Hakların Devri. Bu Kullanım Koşullarını zaman zaman değiştirebiliriz. Somut değişiklikler olması durumunda, bu değişiklikler sizin için geçerli olmadan en az bir ay önce sizi bilgilendireceğiz. Değişiklikleri kabul etmek istemiyorsanız değişiklikler yürürlüğe girmeden önce hesabınızı sonlandırabilirsiniz. Sizinle anlaşmamızı, ilişkili haklarımız ve yükümlülüklerimiz dâhil olmak üzere, herhangi bir zamanda bir başka tarafa devir veya temlik edebiliriz ve böyle bir devir veya temlikle ilişkili olarak bizimle iş birliğinde bulunmayı kabul etmiş sayılırsınız."
+  },
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p49",
+   "quote": "ürünlerin geliştirilmesi, üretimi ve pazarlanması ve Netflix hizmetinin ortaya çıkarılması, değiştirilmesi veya iyileştirilmesi de dâhil olmak üzere herhangi bir amaçla dünya çapında ve süresiz olarak kullanmakta serbesttir.",
+   "explanation_tr": "Şirkete gönderdiğiniz geri bildirimler üzerinde sınırsız kullanım hakkı tanınır.",
+   "severity": "dusuk",
+   "idCorrected": false,
+   "paragraphText": "7.3. Geri Bildirim. Netflix, anketlere verdiğiniz yanıtlar veya web sitelerimiz ve kullanıcı arayüzlerimiz dâhil Netflix hizmetine gönderdiğiniz iletileri de kapsayacak şekilde, bize gönderebileceğiniz herhangi bir iletişimde yer alan yorumları, bilgileri, fikirleri, kavramları, değerlendirmeleri, teknikleri veya diğer materyalleri (\"Geri Bildirim\"), size herhangi bir ek tazminat vermeksizin, sizin katkınızı belirtmeksizin veya size ödeme yapmaksızın, ürünlerin geliştirilmesi, üretimi ve pazarlanması ve Netflix hizmetinin ortaya çıkarılması, değiştirilmesi veya iyileştirilmesi de dâhil olmak üzere herhangi bir amaçla dünya çapında ve süresiz olarak kullanmakta serbesttir. Ayrıca, geçerli yasaların izin verdiği ölçüde, Geri Bildirimde ve Geri Bildirimle ilgili herhangi bir “manevi hak” talebinde bulunmayacağınızı kabul edersiniz."
+  },
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p28",
+   "quote": "Bu Kullanım Koşullarını ihlal etmeniz veya hizmeti yasadışı bir şekilde ya da dolandırıcılık amaçlı kullanmanız halinde, hizmetimizi kullanmanızı sonlandırabilir veya kısıtlayabiliriz.",
+   "explanation_tr": "Kurallara uyulmadığı durumlarda hesabınız askıya alınabilir veya kapatılabilir.",
+   "severity": "dusuk",
+   "idCorrected": false,
+   "paragraphText": "Bu Kullanım Koşullarını ihlal etmeniz veya hizmeti yasadışı bir şekilde ya da dolandırıcılık amaçlı kullanmanız halinde, hizmetimizi kullanmanızı sonlandırabilir veya kısıtlayabiliriz."
+  }
+ ],
+ "rejected": [],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "yuksek",
+  "label": "Yüksek güven",
+  "reasons": [],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Netflix Kullanım Koşulları | Netflix Yardım Merkezi",
+  "url": "https://help.netflix.com/legal/termsofuse",
+  "model": "gemini-3.5-flash-lite",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 28487,
+  "sentParagraphs": 54,
+  "totalParagraphs": 54
+ }
+}

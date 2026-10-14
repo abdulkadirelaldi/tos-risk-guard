@@ -1,0 +1,38 @@
+{
+ "risk_score": 90,
+ "summary": "StreamBox abonelik sözleşmesi; otomatik yenileme, fiyat değişiklikleri, iade yapılmaması, iptal sürecinin 30 güne kadar sürmesi ve bu sürede ücret alınması, verilerin üçüncü taraflarla paylaşılması ve süresiz saklanması, bildirim yapılmaksızın koşulların değiştirilebilmesi, Delaware mahkemelerinin yetkili kılınması ve toplu dava feragatleri gibi kullanıcı aleyhine ciddi riskler içermektedir.",
+ "risky_clauses": [
+  {
+   "quote": "Aylık üyeliğiniz, siz iptal edene kadar her ay otomatik olarak yenilenir ve kayıtlı ödeme yönteminizden ücret tahsil edilir.",
+   "explanation": "Kullanıcının açık onayı olmadan otomatik yenileme ile her ay düzenli tahsilat yapılmasını sağlar."
+  },
+  {
+   "quote": "StreamBox, üyelik ücretlerini dilediği zaman değiştirme hakkını saklı tutar; yeni ücret bir sonraki fatura döneminden itibaren uygulanır.",
+   "explanation": "Şirketin tek taraflı olarak fiyat artışı yapabilmesine olanak tanır."
+  },
+  {
+   "quote": "Ödemeler iade edilmez. Kısmen kullanılmış abonelik dönemleri için iade veya kredi verilmez.",
+   "explanation": "Hizmetin kullanılmadığı dönemler için bile para iadesi yapılmayacağını belirtir, bu da tüketici hakları açısından risklidir."
+  },
+  {
+   "quote": "İptal talebi yalnızca müşteri hizmetlerine yazılı olarak iletilebilir ve işleme alınması 30 güne kadar sürebilir; bu süre içinde ücretlendirme devam eder.",
+   "explanation": "İptal sürecini zorlaştırır ve iptal talebinden sonraki 30 güne kadar kullanıcıdan ücret alımına devam edilmesine izin verir."
+  },
+  {
+   "quote": "İzleme geçmişiniz, cihaz bilgileriniz ve konum verileriniz reklam ortaklarımız ve iş ortaklarımızla paylaşılabilir.",
+   "explanation": "Kullanıcının hassas verilerinin (konum ve izleme geçmişi) üçüncü taraf reklam ortaklarıyla paylaşılmasına onay ister."
+  },
+  {
+   "quote": "Hesabınızı kapatsanız bile verileriniz yasal ve ticari amaçlarla süresiz olarak saklanabilir.",
+   "explanation": "Hesap kapatılsa dahi kişisel verilerin süresiz olarak saklanmasına imkan tanır."
+  },
+  {
+   "quote": "StreamBox bu koşulları önceden bildirimde bulunmaksızın değiştirebilir; değişiklikten sonra hizmeti kullanmaya devam etmeniz yeni koşulları kabul ettiğiniz anlamına gelir.",
+   "explanation": "Şartların önceden haber verilmeksizin değiştirilebilmesini ve kullanıcıya dayatılmasını sağlar."
+  },
+  {
+   "quote": "Bu sözleşmeden doğan uyuşmazlıklar münhasıran Delaware (ABD) mahkemelerinde, Delaware hukukuna göre çözülür ve üye toplu dava hakkından feragat eder.",
+   "explanation": "Türk kullanıcısı için uyuşmazlık çözümünü ABD'ye taşır ve toplu dava hakkını ortadan kaldırır."
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ToS Risk Guard",
+  "version": "1.0.0",
+  "description": "Kullanım koşulları, gizlilik politikası ve abonelik şartlarından alıntı kanıtlı risk raporu çıkarır. Hukuki tavsiye değildir.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": { "default_title": "Bu sayfayı analiz et" },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    { "resources": ["panel.html", "panel.js", "panel.css"], "matches": ["http://*/*", "https://*/*"] }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  }
+}

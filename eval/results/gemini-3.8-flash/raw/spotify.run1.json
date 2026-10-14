@@ -1,0 +1,174 @@
+{
+ "status": "tamam",
+ "disclaimer": "Bu uygulama hukuki tavsiye vermez. Rapor otomatik üretilmiştir ve hatalı ya da eksik olabilir; bağlayıcı olan sözleşmenin kendisidir.",
+ "documentType": "kullanim_kosullari",
+ "summary": "Bu metin Spotify'ın kullanım koşullarını, abonelik ve ödeme esaslarını, içerik haklarını ve uyuşmazlık çözüm yöntemlerini düzenlemektedir. Şartlar; otomatik yenilenen ödemeler, tek taraflı değişiklik hakları, geniş içerik lisansı ve sorumluluk sınırlamaları gibi kullanıcı aleyhine olabilecek çeşitli hükümler içermektedir.",
+ "score": 65,
+ "level": "yuksek",
+ "breakdown": [
+  {
+   "category": "tahkim_dava_feragati",
+   "label": "Tahkim / toplu davadan feragat",
+   "points": 15,
+   "count": 2
+  },
+  {
+   "category": "otomatik_yenileme",
+   "label": "Otomatik yenileme / ücretlendirme",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "label": "İptal ve iade kısıtlaması",
+   "points": 12,
+   "count": 1
+  },
+  {
+   "category": "icerik_lisansi",
+   "label": "Kullanıcı içeriği üzerinde geniş lisans",
+   "points": 10,
+   "count": 1
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "label": "Tek taraflı sözleşme değişikliği",
+   "points": 8,
+   "count": 2
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "label": "Sorumluluk sınırlaması",
+   "points": 4,
+   "count": 1
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "label": "Yabancı yetkili mahkeme / hukuk",
+   "points": 4,
+   "count": 1
+  }
+ ],
+ "clauses": [
+  {
+   "category": "icerik_lisansi",
+   "paragraph_id": "p79",
+   "quote": "Bu doğrultuda Spotify'a herhangi bir Kullanıcı İçeriğinizi Spotify Hizmeti ile bağlantılı olarak herhangi bir ortam aracılığıyla, tek başına ya da başka İçerik ile veya materyallerle birlikte, herhangi bir şekilde ve bilinen ya da bundan sonra geliştirilecek olan herhangi bir araçla, yöntemle veya teknolojiyle çoğaltmak, herkese açık hale getirmek, icra etmek ve göstermek, tercüme etmek, değiştirmek, türev eserlerini oluşturmak ve dağıtmak üzere münhasır olmayan, devredilebilir, alt lisansı verilebilir, telifsiz, tamamen ödenmiş, iptal edilemez ve tüm dünyada geçerli bir lisans verirsiniz.",
+   "explanation_tr": "Platforma yüklediğiniz içerikler üzerinde Spotify'a dünya çapında, ücretsiz, süresiz ve başkalarına devredebileceği çok geniş kullanım hakları vermiş olursunuz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Hizmette yayınladığınızda Kullanıcı İçeriği'nin mülkiyetini elinizde bulundurursunuz. Ancak Kullanıcı İçeriğinizi Spotify Hizmeti'nde kullanılabilir hale getirebilmemiz ve size belirli özellikler ve işlevler sunabilmemiz için sizden bu Kullanıcı İçeriği'ne ilişkin sınırlı bir lisans almamız gerekir. Bu doğrultuda Spotify'a herhangi bir Kullanıcı İçeriğinizi Spotify Hizmeti ile bağlantılı olarak herhangi bir ortam aracılığıyla, tek başına ya da başka İçerik ile veya materyallerle birlikte, herhangi bir şekilde ve bilinen ya da bundan sonra geliştirilecek olan herhangi bir araçla, yöntemle veya teknolojiyle çoğaltmak, herkese açık hale getirmek, icra etmek ve göstermek, tercüme etmek, değiştirmek, türev eserlerini oluşturmak ve dağıtmak üzere münhasır olmayan, devredilebilir, alt lisansı verilebilir, telifsiz, tamamen ödenmiş, iptal edilemez ve tüm dünyada geçerli bir lisans verirsiniz. Mümkün olan ve geçerli kanunlar kapsamında izin verilen ölçüde, Geri Bildirim dahil herhangi bir Kullanıcı İçeriği'nin yazarı olarak tanımlanma hakkınız ve bu tür Kullanıcı İçeriği'nin uygunsuz şekilde ele alınmasına itiraz etme hakkınız dahil olmak üzere her türlü \"manevi haktan\" veya eş değer haklardan feragat etmeyi ve bu tür haklardan yararlanmamayı da kabul edersiniz."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p117",
+   "quote": "GEÇERLİ KANUNLARIN İZİN VERDİĞİ DURUMLARDA SİZ VE SPOTIFY, BİRBİRİNİZE KARŞI HERHANGİ BİR TOPLU YA DA TEMSİLİ GİBİ GÖRÜNEN DAVADA BİR DAVACI YA DA TOPLU DAVA TARAFI OLARAK DEĞİL, YALNIZCA KENDİ SIFATINIZLA İDDİADA BULUNABİLECEĞİNİZİ KABUL EDERSİNİZ.",
+   "explanation_tr": "Şirkete karşı diğer kullanıcılarla birleşerek toplu dava açma veya grup davalarına katılma hakkınızdan feragat etmiş olursunuz.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "GEÇERLİ KANUNLARIN İZİN VERDİĞİ DURUMLARDA SİZ VE SPOTIFY, BİRBİRİNİZE KARŞI HERHANGİ BİR TOPLU YA DA TEMSİLİ GİBİ GÖRÜNEN DAVADA BİR DAVACI YA DA TOPLU DAVA TARAFI OLARAK DEĞİL, YALNIZCA KENDİ SIFATINIZLA İDDİADA BULUNABİLECEĞİNİZİ KABUL EDERSİNİZ. Siz ve Spotify mutabık kalmadığınız sürece hiçbir hakem ya da hakim birden fazla kişinin iddialarını birleştiremez veya başka bir şekilde herhangi bir türde bir temsili dava ya da toplu dava yürütemez."
+  },
+  {
+   "category": "tahkim_dava_feragati",
+   "paragraph_id": "p121",
+   "quote": "Siz ve Spotify, bu Sözleşmeler ile veya Hizmet'in bir kullanıcısı olarak Spotify ile aranızdaki ilişkiyle herhangi bir şekilde bağlantılı ya da ilişkili olarak Spotify ile aranızda oluşan her türlü anlaşmazlığın, iddianın veya çatışmanın (sözleşmeye, haksız fiile, yasaya, dolandırıcılığa, yanlış beyana ya da başka bir yasal teoriye dayalı olarak veya iddianın Sözleşmeler süresince ya da Sözleşmeler sona erdikten sonra oluşmasından bağımsız olarak), zorunlu bağlayıcı bireysel tahkim ile çözümleneceğini kabul edesiniz.",
+   "explanation_tr": "Uyuşmazlıkların genel mahkemeler yerine bağlayıcı bireysel tahkim yoluyla çözülmesi zorunlu tutulmaktadır.",
+   "severity": "yuksek",
+   "idCorrected": false,
+   "paragraphText": "Siz ve Spotify, bu Sözleşmeler ile veya Hizmet'in bir kullanıcısı olarak Spotify ile aranızdaki ilişkiyle herhangi bir şekilde bağlantılı ya da ilişkili olarak Spotify ile aranızda oluşan her türlü anlaşmazlığın, iddianın veya çatışmanın (sözleşmeye, haksız fiile, yasaya, dolandırıcılığa, yanlış beyana ya da başka bir yasal teoriye dayalı olarak veya iddianın Sözleşmeler süresince ya da Sözleşmeler sona erdikten sonra oluşmasından bağımsız olarak), zorunlu bağlayıcı bireysel tahkim ile çözümleneceğini kabul edesiniz. Tahkim, mahkemede görülen bir davaya göre daha gayriresmidir. TAHKİMDE HAKİM YA DA JÜRİ BULUNMAZ VE TAHKİM KARARININ MAHKEMECE İNCELENMESİ SINIRLIDIR. Mahkemeye göre daha sınırlı tespitler yapılabilir. Hakemin bu karara uyması gerekir ve bir mahkemeyle aynı tazminat ve zararın telafisi kararını verebilir (avukatlık ücretleri dahil) ancak hakem, tahkimin taraflarından başka herhangi bir taraf lehinde açıklayıcı ya da ihtiyati tedbir kararı veremez. Bu tahkim hükmü, Sözleşmeler sona erdikten sonra da yürürlükte kalacaktır."
+  },
+  {
+   "category": "otomatik_yenileme",
+   "paragraph_id": "p51",
+   "quote": "Aksi belirtilmedikçe (örneğin, Ön Ödemeli Süre için kaydolduysanız) Ücretli Abonelikler iptal edilene kadar süresiz olarak devam eder. Her faturalandırma döneminin ilk gününde tekrar faturalandırılırsınız; ilgili ödemeyi yapar ve o sırada geçerli olan abonelik ücretini ödeme yönteminizden tahsil etmemiz için bize (veya bir üçüncü taraf aracılığıyla kaydolursanız geçerli üçüncü tarafa) yetki verirsiniz.",
+   "explanation_tr": "Aboneliğinizi siz manuel olarak iptal etmediğiniz sürece her dönem otomatik olarak yenilenir ve ücret kartınızdan kesilmeye devam eder.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Aksi belirtilmedikçe (örneğin, Ön Ödemeli Süre için kaydolduysanız) Ücretli Abonelikler iptal edilene kadar süresiz olarak devam eder. Her faturalandırma döneminin ilk gününde tekrar faturalandırılırsınız; ilgili ödemeyi yapar ve o sırada geçerli olan abonelik ücretini ödeme yönteminizden tahsil etmemiz için bize (veya bir üçüncü taraf aracılığıyla kaydolursanız geçerli üçüncü tarafa) yetki verirsiniz."
+  },
+  {
+   "category": "iptal_iade_kisitlamasi",
+   "paragraph_id": "p52",
+   "quote": "Aksi belirtilmedikçe iptal işlemi iptal ettiğiniz fatura döneminin sonunda geçerli olur ve Spotify Hizmeti'nin ücretsiz sürümüne düşürülürsünüz. Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız.",
+   "explanation_tr": "Aboneliğinizi dönem bitmeden iptal etseniz dahi kalan günlerin ücreti iade edilmez.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Ücretli Aboneliğinizi, Spotify hesabınızda oturum açıp Hesap sayfasındaki yönergeleri izleyerek veya bu bağlantıya tıklayıp talimatları uygulayarak istediğiniz zaman iptal edebilirsiniz. Aksi belirtilmedikçe iptal işlemi iptal ettiğiniz fatura döneminin sonunda geçerli olur ve Spotify Hizmeti'nin ücretsiz sürümüne düşürülürsünüz. Bu Şartlar'da aksi belirtilmediği sürece kısmi üyelik dönemleri için iade veya kredi sunmayız."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p47",
+   "quote": "Spotify; düzenli abonelik ücretleri, Ön Ödeme Dönemi (henüz ödemesi yapılmamış dönemler için) ya da Kodlar (yukarıda tanımlanmıştır) dahil Ücretli Abonelikler'in ücretini zaman zaman değiştirebilir ve her türlü fiyat değişikliğini makul bir süre önce size bildirecektir. Fiyat değişiklikleri, fiyat değişikliği tarihini takip eden bir sonraki abonelik döneminin başında yürürlüğe girer. Geçerli kanunlara tabi olmak üzere, fiyat değişikliği geçerli olduktan sonra Spotify Hizmeti'ni kullanmaya devam ederek yeni fiyatı kabul etmiş olursunuz.",
+   "explanation_tr": "Spotify abonelik ücretlerini tek taraflı artırabilir; hizmeti kullanmaya devam etmeniz yeni fiyatı kabul ettiğiniz anlamına gelir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Spotify; düzenli abonelik ücretleri, Ön Ödeme Dönemi (henüz ödemesi yapılmamış dönemler için) ya da Kodlar (yukarıda tanımlanmıştır) dahil Ücretli Abonelikler'in ücretini zaman zaman değiştirebilir ve her türlü fiyat değişikliğini makul bir süre önce size bildirecektir. Fiyat değişiklikleri, fiyat değişikliği tarihini takip eden bir sonraki abonelik döneminin başında yürürlüğe girer. Geçerli kanunlara tabi olmak üzere, fiyat değişikliği geçerli olduktan sonra Spotify Hizmeti'ni kullanmaya devam ederek yeni fiyatı kabul etmiş olursunuz. Bir fiyat değişikliğini kabul etmiyorsanız fiyat değişikliği yürürlüğe girmeden önce geçerli Ücretli Abonelik'ten çıkarak değişikliği reddedebilirsiniz."
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p101",
+   "quote": "Ancak bu duruma tabi olmak üzere Spotify Hizmeti \"olduğu gibi\" ve \"kullanılabilir olduğu şekliyle\", hiçbir türde açık, zımni veya yasal garanti olmaksızın sunulmaktadır. Ayrıca, Spotify ve tüm içerik sahipleri yeterli kalite, pazarlanabilirlik, belirli bir amaca uygunluk veya ihlal içermemeyle ilgili her türlü açık, zımni ve yasal garantiyi reddetmektedir. Spotify ya da hiçbir içerik sahibi, Spotify Hizmeti'nin kötü amaçlı yazılımlardan ya da başka zararlı bileşenlerden ari olduğuna dair hiçbir garanti vermemektedir.",
+   "explanation_tr": "Hizmet herhangi bir kalite veya kesintisizlik garantisi verilmeden sunulur; olası zararlı yazılımlar ya da teknik sorunlar için şirket sorumluluk üstlenmez.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Spotify, Spotify Hizmetleri'ni makul özen ve beceriyle ve Spotify tarafından sağlanan Spotify Hizmeti'nin tüm özelliklerine uygun olarak sağlamaya devam edecektir. Ancak bu duruma tabi olmak üzere Spotify Hizmeti \"olduğu gibi\" ve \"kullanılabilir olduğu şekliyle\", hiçbir türde açık, zımni veya yasal garanti olmaksızın sunulmaktadır. Ayrıca, Spotify ve tüm içerik sahipleri yeterli kalite, pazarlanabilirlik, belirli bir amaca uygunluk veya ihlal içermemeyle ilgili her türlü açık, zımni ve yasal garantiyi reddetmektedir. Spotify ya da hiçbir içerik sahibi, Spotify Hizmeti'nin kötü amaçlı yazılımlardan ya da başka zararlı bileşenlerden ari olduğuna dair hiçbir garanti vermemektedir. Ayrıca Spotify, hiçbir üçüncü taraf uygulaması (veya bunların içeriği), kullanıcı içeriği, cihaz ya da Spotify Hizmeti üzerinden ya da aracılığıyla veya köprü verilen herhangi bir web sitesinde bir üçüncü tarafça reklamı yapılan, tanıtılan veya sunulan herhangi bir ürün ya da hizmete dair hiçbir beyanda bulunmaz, bunları garanti etmez veya bunlara ilgili sorumluluk kabul etmez ve Spotify, bunlara ilişkin üçüncü taraf sağlayıcıları ile sizin aranızdaki hiçbir işlem için sorumlu değildir. Sizin tarafınızdan Spotify'dan alınan sözlü ya da yazılı hiçbir tavsiye ya da bilgi, Spotify adına herhangi bir şekilde bir garanti teşkil etmeyecektir. Spotify Hizmeti'ni kullanırken sakıncalı içerik filtreleme özelliklerine erişebilirsiniz ancak bu özelliklerin kullanılması bazı sakıncalı içeriklerin sunulmasıyla sonuçlanabilir ve tüm sakıncalı içerikleri filtrelemek için bu özelliklere güvenmemeniz gerekir. Bu madde geçerli kanunların izin verdiği azami ölçüde uygulanacaktır."
+  },
+  {
+   "category": "tek_tarafli_degisiklik",
+   "paragraph_id": "p138",
+   "quote": "Bu Şartlar'da yapılacak herhangi bir değişiklik sonrasında Spotify Hizmeti'ni kullanmanız, bu değişiklikleri kabul ettiğiniz anlamına gelir. Güncellenen Şartlar kapsamında Spotify Hizmeti'ni kullanmaya devam etmek istemiyorsanız bizimle iletişime geçerek hesabınızı sonlandırabilirsiniz.",
+   "explanation_tr": "Kullanım şartları güncellendikten sonra uygulamayı kullanmaya devam etmeniz, aleyhinize olan değişiklikleri de otomatik olarak onayladığınız anlamına gelir.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "Bu Şartlar'da (buraya referans olarak dahil edilen diğer Spotify şartları ve koşulları dahil) zaman zaman sizi ilgili değişiklikler konusunda (değişiklikler geçerli olmadan önce), geçerli Spotify Hizmeti üzerinden revize edilmiş bir Sözleşme yayınlamak dahil olmak üzere makul yöntemlerle (önemli değişikliklerde bu bildirimi e-posta, hizmet içi açılır mesaj veya başka yöntemlerle tamamlamaya çalışmamız şartıyla) bilgilendirmek suretiyle değişiklikler yapabiliriz. İlgili değişiklikler, revize edilen Şartlar'ı ya da diğer Spotify şartları ve koşullarını yayınladığımız, bu değişikliklerin dahil edildiği veya sizi ilgili değişiklikler hakkında bilgilendirdiğimiz tarihten önce sizinle aramızdaki herhangi bir anlaşmazlık için geçerli olmayacaktır. Bu Şartlar'da yapılacak herhangi bir değişiklik sonrasında Spotify Hizmeti'ni kullanmanız, bu değişiklikleri kabul ettiğiniz anlamına gelir. Güncellenen Şartlar kapsamında Spotify Hizmeti'ni kullanmaya devam etmek istemiyorsanız bizimle iletişime geçerek hesabınızı sonlandırabilirsiniz. Bu belgenin en başında belirtilen tarih, bu Şartlar'ın en son değiştirildiği tarihi gösterir."
+  },
+  {
+   "category": "yabanci_yetki_hukuk",
+   "paragraph_id": "p114",
+   "quote": "İkamet ettiğiniz ülkenin zorunlu kanunları kapsamında aksi gerekmediği müddetçe, Sözleşmeler (ve bunlar nedeniyle ya da bunlarla bağlantılı olarak ortaya çıkan tüm sözleşme dışı anlaşmazlıklar/iddialar), kanun seçimi ya da kanun çatışması ilkeleri dikkate alınmaksızın aşağıda listelenen eyaletin ya da ülkenin kanunlarına tabidir.",
+   "explanation_tr": "Uyuşmazlık durumunda yerel tüketici haklarınızın zorunlu kıldığı durumlar saklı kalmak üzere İsveç hukuku ve mahkemeleri yetkili kılınmıştır.",
+   "severity": "orta",
+   "idCorrected": false,
+   "paragraphText": "İkamet ettiğiniz ülkenin zorunlu kanunları kapsamında aksi gerekmediği müddetçe, Sözleşmeler (ve bunlar nedeniyle ya da bunlarla bağlantılı olarak ortaya çıkan tüm sözleşme dışı anlaşmazlıklar/iddialar), kanun seçimi ya da kanun çatışması ilkeleri dikkate alınmaksızın aşağıda listelenen eyaletin ya da ülkenin kanunlarına tabidir."
+  }
+ ],
+ "rejected": [
+  {
+   "category": "hesap_kapatma",
+   "paragraph_id": "p97",
+   "quote": "Bu Şartlar'ı ihlal ettiğinizi düşünürsek, tarafınıza makul bir süre öncesinde bildirimde bulunarak Spotify Hizmeti'ni ya da herhangi bir önemli bileşenini tarafınıza sağlamayı durdurursak veya geçerli kanunlara uyum amacıyla bunun gerekli olduğunu düşündüğümüz durumlarda Spotify, herhangi bir zamanda bu Şartlar'ı (buraya dahil edilen ek Spotify şartları ve koşulları dahil) feshedebilir ya da Spotify Hizmeti'ne erişiminizi askıya alabilir. Siz veya Spotify bu Şartlar'ı ihlal eder veya Spotify sizin Spotify Hizmeti'ne erişiminizi askıya alırsa Spotify'ın geçerli kanunlara tabi olmak üzere tarafınıza karşı hiçbir yükümlülüğü ve sorumluluğu olmayacağını (bu Şartlarda aksi belirtilmediği takdirde) ve halihazırda yapmış olduğunuz ödemeleri iade etmeyeceğini kabul edersiniz.",
+   "reason": "alinti_cok_uzun",
+   "reasonText": "Alıntı çok uzun"
+  },
+  {
+   "category": "sorumluluk_sinirlamasi",
+   "paragraph_id": "p104",
+   "quote": "Spotify, yetkilileri, hissedarları, çalışanları, temsilcileri, yöneticileri, bağlı ortaklıkları, iştirakleri, halefleri, görevlileri, tedarikçileri veya lisans sağlayıcıları hiçbir durumda şunlardan sorumlu olmayacaktır: (1) her türlü dolaylı, özel, arızi, cezai, örnek niteliğindeki veya bağlı zarardan; (2) Spotify Hizmeti'nin, cihazların, üçüncü taraf uygulamalarının veya üçüncü taraf uygulama içeriğinin kullanılmasından veya kullanılamamasından kaynaklanan her durumda kullanım kaybı, veri kaybı, iş veya kâr kaybından (doğrudan veya dolaylı); veya (3) Spotify Hizmeti'ne, üçüncü taraf uygulamalarına veya üçüncü taraf uygulama içeriğine ilişkin tüm iddialar için (a) Spotify'a ilk iddiadan önceki on iki ay içinde ödemiş olduğunuz tutar veya (b) 30,00 $ arasında hangisi daha yüksekse ilgili tutardaki toplam yükümlülük.",
+   "reason": "alinti_cok_uzun",
+   "reasonText": "Alıntı çok uzun"
+  }
+ ],
+ "injections": {
+  "hidden": [],
+  "visible": []
+ },
+ "hiddenCount": 0,
+ "uncertainty": {
+  "level": "orta",
+  "label": "Dikkatli yorumlayın",
+  "reasons": [
+   "Modelin 11 iddiasından 2 tanesi orijinal metinde doğrulanamadığı için atıldı."
+  ],
+  "coverage": 1
+ },
+ "meta": {
+  "title": "Kullanım Hüküm ve Koşulları - Spotify",
+  "url": "https://www.spotify.com/tr-tr/legal/end-user-agreement/",
+  "model": "gemini-3.8-flash",
+  "extractionCoverage": 1,
+  "attempts": 1,
+  "ms": 157959,
+  "sentParagraphs": 168,
+  "totalParagraphs": 168
+ }
+}

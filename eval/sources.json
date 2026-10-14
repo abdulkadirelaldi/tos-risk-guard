@@ -1,0 +1,38 @@
+[
+  {
+    "id": "netflix",
+    "name": "Netflix Kullanım Koşulları",
+    "lang": "tr",
+    "url": "https://help.netflix.com/legal/termsofuse"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify Son Kullanıcı Sözleşmesi",
+    "lang": "tr",
+    "url": "https://www.spotify.com/tr-tr/legal/end-user-agreement/"
+  },
+  {
+    "id": "github",
+    "name": "GitHub Terms of Service",
+    "lang": "en",
+    "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox Terms of Service",
+    "lang": "en",
+    "url": "https://www.dropbox.com/terms"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom Hizmet Şartları",
+    "lang": "tr",
+    "url": "https://www.zoom.com/en/trust/terms/"
+  },
+  {
+    "id": "youtube",
+    "name": "YouTube Hizmet Şartları",
+    "lang": "tr",
+    "url": "https://www.youtube.com/static?template=terms&hl=tr"
+  }
+]
